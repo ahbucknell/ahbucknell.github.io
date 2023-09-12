@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Title"
+title                    : "Angus B"
 title_separator          : "-"
 name                     : &name "Angus Bucknell"
-description              : &description "personal description"
+description              : &description "PhD student at TSL, Norwich"
 url                      : https://ahbucknell.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ahbucknell.github.io"
@@ -80,13 +80,13 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
+  name             : "Angus"
   avatar           : "profile.png"
   bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
-  employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  location         : "Norwich, UK"
+  employer         : "The Sainsbury Laboratory"
+  pubmed           :
+  googlescholar    : "https://scholar.google.com/citations?user=7G6P_c4AAAAJ&hl=en"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "ahbucknell"
   google_plus      :
   keybase          :
   instagram        :
