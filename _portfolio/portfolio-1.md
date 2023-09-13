@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Master's research: <i>Sanctuary</i> transposon"
+excerpt: "Assessing the mobilisation of the <i>Sanctuary</i> transposon within <i>B. sorokiniana</i> isolate CS10<br/><img src='/images/500x300.png'><br/>Conidia of B. sorokiniana, photo taken by Bruce Watt, University of Maine, Bugwood.org (CC BY-NC 3.0 US)."
 collection: portfolio
 ---
 
