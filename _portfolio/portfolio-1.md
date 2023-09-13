@@ -5,4 +5,6 @@ excerpt: "Assessing the mobilisation of the <i>Sanctuary</i> transposon within <
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+*Starships* are a novel group of giant transposons found within the Pezizomycete class of fungi. *Starships* differ from other type II transposons due to their large size and ability to carry ‘cargo’ genes. Some genes carried within different *Starships* have been linked through phylogenetic analyses to horizontal gene transfer (HGT) events. Such events would require *Starships* to be capable of transposition.  Unlike most type II transposons *Starships* do not contain the typical DDE motif transposase, and mobility is instead driven by a tyrosine recombinase gene known as the ‘Captain’. Determining whether individual *Starship* elements are mobile is a key prerequisite to subsequently using these transposons as models for HGT.
+
+Under the supervision of [Dr Megan McDonald](https://www.birmingham.ac.uk/staff/profiles/biosciences/mcdonald-megan.aspx), my Master’s project aimed to determine the mobility of a **Starship* known as **Sanctuary* within the fungal pathogen *Bipolaris sorokiniana* isolate CS10. The method for this was adapted from [Urquhart et al. (2023)](https://doi.org/10.1073/pnas.2214521120) who demonstrated that the **Starship** called *Hephaestus* was mobile within *Paecilomyces variotii*.
