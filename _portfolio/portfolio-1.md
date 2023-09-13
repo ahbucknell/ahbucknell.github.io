@@ -1,6 +1,7 @@
 ---
 title: "Master's research: <i>Sanctuary</i> transposon"
-excerpt: "Assessing the mobilisation of the <i>Sanctuary</i> transposon within <i>B. sorokiniana</i> isolate CS10<br/><img src='/images/IMG_0845.png'>"
+excerpt: "Assessing the mobilisation of the <i>Sanctuary</i> transposon within <i>B. sorokiniana</i> isolate CS10<br/>
+<img src='/images/IMG_0845.png' width='500' height='300' alt='Fungus growth'>"
 collection: portfolio
 ---
 
