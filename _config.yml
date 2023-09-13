@@ -81,10 +81,10 @@ analytics:
 # Site Author
 author:
   name             : "Angus"
-  avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  avatar           : "IMG_2289.png"
+  bio              : "I'm interested in fungal crop pathogens and transposon biology."
   location         : "Norwich, UK"
-  employer         : "The Sainsbury Laboratory"
+  employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=7G6P_c4AAAAJ&hl=en"
   email            :
@@ -102,14 +102,14 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  linkedin         : "https://www.linkedin.com/in/ahbucknell/"
+  orcid            : "https://orcid.org/my-orcid?orcid=0000-0001-6039-9330"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : "ahbucknell"
   vine             :
   weibo            :
   xing             :
