@@ -1,9 +1,9 @@
 ---
-title: "Understanding CACTA transposons within UK tree species"
-excerpt: "Exploring Isotianil as a future defence against future UK wheat blast infections"
+title: "Identifying Pack-CACTA transposons within UK tree species"
+excerpt: "Pack-TYPE transposons are able to capture DNA from the host genome, this ability is found across different transposon groups. One such group is the class II CACTA superfamily, members can be either 'pack' or 'non-pack' [(Gisby and Catoni, 2022)]( https://doi.org/10.1371/journal.pgen.1010078)."
 collection: portfolio
 ---
 
-I was given the opportunity to join the Catoni Lab as a summer research student before starting my third year. Here, I was testing a newly developed in-house R package called packFinder (Gisby and Catoni, 2022). I was looking for CACTA transposons within three UK tree species: Fraxinus excelsior (Common ash), Quercus robur (English oak), and Corylus avellana (Common hazel).
+In 2020 I joined the [Catoni Lab](https://catonilab.com/) as a summer research student for 2 months remotely. My research focused on identifying pack-CACTA transposons within three UK tree species: *Fraxinus excelsoir* (common ash), *Quercus robur* (English oak), and *Corylus avellana* (common hazel). Pack-TYPE transposons have only be discovered within plants, mostly within model organisms rather than in trees.  To achieve this I was using a previosuly in-house developed R Bioconductor package known as [PackFinder](https://bioconductor.org/packages/devel/bioc/html/packFinder.html) [(Gisby and Catoni, 2022)]( https://doi.org/10.1371/journal.pgen.1010078). 
 
-I was fortunate to present my results at the [Gatsby Plant Science Summer School](https://www.gatsby.org.uk/plant-science/programmes/gatsby-plant-science-summer-school) Alumni Symposium.
+This project was my first introduction to research, and paved the way for my passion of transposon biology. I especially enjoyed applying previously learned R skills in a more biological context. I was also fortunate to present my results, and discuss my experience of summer research, at the [Gatsby Plant Science Summer School](https://www.gatsby.org.uk/plant-science/programmes/gatsby-plant-science-summer-school) Alumni Symposium.
