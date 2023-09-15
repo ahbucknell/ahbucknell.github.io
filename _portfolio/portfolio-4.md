@@ -1,6 +1,6 @@
 ---
 title: "Identifying Pack-CACTA transposons within UK tree species"
-excerpt: "Pack-TYPE transposons are able to capture DNA from the host genome, this ability is found across different transposon groups. One such group is the class II CACTA superfamily, members can be either 'pack' or 'non-pack' [(Gisby and Catoni, 2022)]( https://doi.org/10.1371/journal.pgen.1010078)."
+excerpt: "Pack-TYPE transposons are able to capture DNA from the host genome, this ability is found across different transposon groups. One such group is the class II CACTA superfamily, members can be either 'pack' or 'non-pack'."
 collection: portfolio
 ---
 

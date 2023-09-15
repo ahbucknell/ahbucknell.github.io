@@ -1,6 +1,6 @@
 ---
-title: "Master's research: <i>Sanctuary</i> transposon"
-excerpt: "Assessing the mobilisation of the <i>Sanctuary</i> transposon within <i>B. sorokiniana</i> isolate CS10"
+title: "Assessing the mobility of the *Starship* transposon *Sanctuary* within the fungal pathogen *B. sorokiniana*"
+excerpt: "*B. sorokiniana* is a wheat and barley fungal pathogen. Some isolates contain the ToxA effector, while not essential this effector greatly improves pathogenicity. In the CS10 isolate, ToxA is embedded within the ToxhAT transposon, which is itself embedded in the *Sanctuary Starship* transposon."
 collection: portfolio
 ---
 *Starships* are a novel group of giant transposons found within the Pezizomycete class of fungi. *Starships* differ from other type II transposons due to their large size and ability to carry ‘cargo’ genes. Some genes carried within different *Starships* have been linked through phylogenetic analyses to horizontal gene transfer (HGT) events. Such events would require *Starships* to be capable of transposition.  Unlike most type II transposons *Starships* do not contain the typical DDE motif transposase, and mobility is instead driven by a tyrosine recombinase gene known as the ‘Captain’. Determining whether individual *Starship* elements are mobile is a key prerequisite to subsequently using these transposons as models for HGT.
