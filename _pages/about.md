@@ -11,4 +11,4 @@ I'm a PhD student within [Nick Talbot's lab](https://www.tsl.ac.uk/our-work/scie
 
 Previously, I studied Biological Sciences at the University of Birmingham (UK) where I graduated with an integrated Master's in Science (MSci). I completed my final year research project within [Megan McDonald's lab](https://www.birmingham.ac.uk/schools/biosciences/staff/profile?ReferenceId=184123), focusing on the *Starship*-class transposon *Sanctuary I* within the fungal phytopathogen *Bipolaris sorokiniana*.
 
-During my time at Birmingham I had the priviledge of joining [Arturo Marí-Ordóñez's group](Marí-Ordóñez) at the Gregor Mendel Institute (Vienna, AT) via the Vienna BioCenter Summer School for 2 months. My work at the GMI focused on understanding transposon silencing mechanisms within Lemnoideae.
+During my time at Birmingham I had the priviledge of joining [Arturo Marí-Ordóñez's group](https://www.oeaw.ac.at/gmi/research/research-groups/arturo-mari-ordonez) at the Gregor Mendel Institute (Vienna, AT) via the Vienna BioCenter Summer School for 2 months. My work at the GMI focused on understanding transposon silencing mechanisms within Lemnoideae.
