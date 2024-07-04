@@ -1,7 +1,4 @@
 # Portfolio
----
-
-### Education
 
 ---
 
