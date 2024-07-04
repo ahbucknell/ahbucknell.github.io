@@ -32,13 +32,14 @@ Alongside traditional forms of academic output, I value science communication to
 ---
 
 ### PhD research
-*Magnaporthe oryzae* is a phytopathogenic fungus causing blast disease. It has a wide host-range and can infect agronomically significant crops such as rice and wheat.
+*Magnaporthe oryzae* is a phytopathogenic fungus causing blast disease. It has a wide host-range and can infect agronomically significant crops such as rice and wheat. Annually *M. oryzae* destroys ~30% of rice produced globally, enough to feed approximately 60 million people. One method crops become resistant to *M. oryzae* is through the recognition of small virulence proteins produced by the fungus, these are effectors.
 
-[Click here](ahbucknell.github.io/phd) to learn more about my PhD research.
+[Click here](ahbucknell.github.io/phd) to learn more about my PhD research into *M. oryzae* effectors.
+
 ### Master's research
+Transposons are mobile genetic elements that can 'jump' throughout the genome of an organism. This process occurs through either a 'copy-and-paste' or 'cut-and-paste' mechanism. Typically transposons offer litte benefit to the host organism, instead often disrupting other genes and causing genomic instability. One exception to the deleterious nature of transposons are the *Starship* transposons. *Starships* often provide a fitness benefit to the host organism, are often significantly larger, and use a unique method for the 'cut-and-paste' process.
 
-[Click here](ahbucknell.github.io/masters) to learn more about my Master's research.
-
+[Click here](ahbucknell.github.io/masters) to learn more about my Master's research on the *Starship* transposon, *Sanctuary*.
 
 ---
 <p><small>Theme by <a href="https://github.com/orderedlist">orderedlist</a>.<br>Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a>.</small></p>
