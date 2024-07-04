@@ -1,7 +1,7 @@
 title: Angus H. Bucknell # your name (or website title) here
 logo: "/images/logo.svg?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  PhD candidate at The Sainsbury Laboratory, Norwich. Focuses on characterising effector proteins of the blast fungus *Magnaporthe oryze* using cellular & structural biology techniques.
+  PhD candidate at The Sainsbury Laboratory, Norwich. Focuses on characterising effector proteins of the blast fungus <i>Magnaporthe oryze</i> using cellular & structural biology techniques.
   
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
