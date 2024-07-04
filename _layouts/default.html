@@ -30,15 +30,11 @@
          <img src="{{site.logo | relative_url}}" alt="Logo" />
          {% endif %}
          <p>{{ site.description | default: site.github.project_tagline }}</p>
-         <i class="ai ai-orcid-square ai-3x"></i>
-         <i class="ai ai-google-scholar-square ai-3x"></i>
-         <i class="fa-brands fa-square-x-twitter fa-3x"></i>
-         <i class="fa-brands fa-square-github fa-3x"></i>
-         <i class="fa-brands fa-linkedin fa-3x"></i>
-         <p>Above should be a Google scholar icon</p>
-         {% if site.github.is_project_page %}
-         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-         {% endif %}
+         <a href="https://orcid.org/0000-0001-6039-9330"><i class="ai ai-orcid-square ai-3x"></i></a>
+         <a href="https://scholar.google.co.uk/citations?user=7G6P_c4AAAAJ"><i class="ai ai-google-scholar-square ai-3x"></i></a>
+         <a href="https://x.com/ahbucknell"><i class="fa-brands fa-square-x-twitter fa-3x"></i></a>
+         <a href="https://github.com/ahbucknell"><i class="fa-brands fa-square-github fa-3x"></i></a>
+         <a href="https://linkedin.com/in/ahbucknell"><i class="fa-brands fa-linkedin fa-3x"></i></a>
          {% if site.show_downloads %}
          <ul class="downloads">
             <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
