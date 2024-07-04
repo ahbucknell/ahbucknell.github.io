@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <head>
+   <script src="https://kit.fontawesome.com/30cc66bd3a.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
    {% if site.google_analytics %}
    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
    <script>
@@ -29,9 +30,11 @@
          <img src="{{site.logo | relative_url}}" alt="Logo" />
          {% endif %}
          <p>{{ site.description | default: site.github.project_tagline }}</p>
-         <i class="ai ai-google-scholar-square ai-3x"></i>
          <i class="ai ai-orcid-square ai-3x"></i>
-         <i class="ai ai-zenodo-square ai-3x"></i>
+         <i class="ai ai-google-scholar-square ai-3x"></i>
+         <i class="fa-brands fa-square-x-twitter"></i>
+         <i class="fa-brands fa-square-github"></i>
+         <i class="fa-brands fa-linkedin"></i>
          <p>Above should be a Google scholar icon</p>
          {% if site.github.is_project_page %}
          <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
