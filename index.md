@@ -32,6 +32,5 @@ Alongside traditional forms of academic output, I value science communication to
 Here is where I will explain my research.
 
 ---
-<p><small>Theme by <a href="https://github.com/orderedlist">orderedlist</a>.</small></p>
-<p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
+<p><small>Theme by <a href="https://github.com/orderedlist">orderedlist</a>.<br>Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a>.</small></p>
 <!-- Remove above link if you don't want to attibute -->
