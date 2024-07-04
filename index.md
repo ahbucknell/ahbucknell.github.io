@@ -1,4 +1,7 @@
 # Portfolio
+---
+
+### Education
 
 ---
 
@@ -28,8 +31,14 @@ Alongside traditional forms of academic output, I value science communication to
 
 ---
 
-### Research
-Here is where I will explain my research.
+### PhD research
+*Magnaporthe oryzae* is a phytopathogenic fungus causing blast disease. It has a wide host-range and can infect agronomically significant crops such as rice and wheat.
+
+[Click here](ahbucknell.github.io/phd) to learn more about my PhD research.
+### Master's research
+
+[Click here](ahbucknell.github.io/masters) to learn more about my Master's research.
+
 
 ---
 <p><small>Theme by <a href="https://github.com/orderedlist">orderedlist</a>.<br>Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a>.</small></p>
