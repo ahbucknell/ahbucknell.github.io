@@ -1,4 +1,5 @@
-# Portfolio
+## Hello!
+I'm Angus, and I'm a PhD candidate within the Talbot Group at The Sainsbury Laboratory, Norwich, UK. I study the function of effector proteins within the fungal phytopathogen *Magnaporthe oryzae*. Previously I completed my undergraduate integrated Master's degree at the University of Birmingham.
 
 ---
 
@@ -6,6 +7,8 @@
 1. **Bucknell, A. H.**, and McDonald, M. C. (2023). That's no moon, it's a *Starship*: Giant transposons driving fungal horizontal gene transfer. *Molecular Microbiology*, 120, 555–563. doi: [10.1111/mmi.15118](https://doi.org/10.1111/mmi.15118)
 
 ### Pre-prints
+\* indicates joint authorship. 
+
 1. **Bucknell, A. H.\***, Wilson, H. M.\*, Gonçalves do Santos, K. C., Simpfendorfer, S., Milgate, A., Germain, H., Solomon, P. S., Bentham, A. R., and McDonald, M. C. (2024). Sanctuary: A Starship transposon facilitating the movement of the virulence factor ToxA in fungal wheat pathogens. *biorXiv*. doi: [10.1101/2024.03.04.583430](https://doi.org/10.1101/2024.03.04.583430)
 
 ---
@@ -24,12 +27,12 @@ Oral presentations, unless otherwise specified.
 ---
 
 ### Outreach
-Alongside traditional forms of academic output, I value science communication to the general public. Currently I do this primarily through public engagement talks such as [Pint of Science](https://pintofscience.co.uk/). I also volunteered at the [Norwich Science Festival](https://norwichsciencefestival.co.uk/) 2024 to help communicate the science conducted within TSL. I'm keen to develop and participate in new ways to communicate science in Norwich, the UK, and abroad.
+Alongside traditional forms of academic output, I value science communication to the general public. Currently I do this primarily through public engagement talks at evenets such as the [Pint of Science](https://pintofscience.co.uk/) festival. I also volunteered at the [Norwich Science Festival](https://norwichsciencefestival.co.uk/) in 2024 to help communicate the science conducted within TSL. I'm keen to develop and participate in new ways to communicate science in Norwich, the UK, and abroad.
 
 ---
 
 ### PhD research
-*Magnaporthe oryzae* is a phytopathogenic fungus causing blast disease. It has a wide host-range and can infect agronomically significant crops such as rice and wheat. Annually *M. oryzae* destroys ~30% of rice produced globally, enough to feed approximately 60 million people. One method crops become resistant to *M. oryzae* is through the recognition of small virulence proteins produced by the fungus, these are effectors.
+*Magnaporthe oryzae* is a phytopathogenic fungus causing blast disease. It has a wide host-range and can infect agronomically significant crops such as rice and wheat. Annually *M. oryzae* destroys ~30% of rice produced globally, enough to feed approximately 66 million people. One method crops become resistant to *M. oryzae* is through the recognition of small virulence proteins produced by the fungus, these are effectors.
 
 [Click here](phd) to learn more about my PhD research into *M. oryzae* effectors.
 
