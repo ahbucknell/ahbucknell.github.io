@@ -27,7 +27,11 @@ Oral presentations, unless otherwise specified.
 ---
 
 ### Outreach
-Alongside traditional forms of academic output, I value science communication to the general public. Currently I do this primarily through public engagement talks at evenets such as the [Pint of Science](https://pintofscience.co.uk/) festival. I also volunteered at the [Norwich Science Festival](https://norwichsciencefestival.co.uk/) in 2024 to help communicate the science conducted within TSL. I'm keen to develop and participate in new ways to communicate science in Norwich, the UK, and abroad.
+Alongside traditional forms of academic output, I value science communication to the general public. Currently I do this primarily through public engagement talks.
+- I've presented twice at the annual [Pint of Science](https://pintofscience.co.uk/) festival (2023 & 2024)
+- I volunteered at the [Norwich Science Festival](https://norwichsciencefestival.co.uk/) 2024 to communicate the science conducted at TSL
+- I presented an Accessible Science talk at the [JIC Year 10 Science Camp](https://www.jic.ac.uk/training-careers/work-experience/year-10-science-camp/) 2024.
+I'm keen to develop and participate in new ways to communicate science in Norwich, the UK, and abroad.
 
 ---
 
