@@ -50,6 +50,11 @@ Transposons are mobile genetic elements that can 'jump' throughout the genome of
 ### Acknowledgements
 ![Norwich Research Park Doctoral Training Partnership (NRPDTP) logo](images/nrpdtp.svg)
 
+![University of East Anglia (UEA) logo](images/uea-landscape.png)
+
+![UKRI Biotechnology and Biological Sciences Research Council (BBSRC) logo](images/bbsrc-landscape.png)
+
+
 <img src="images/uea.png" width="40%"><img src="images/bbsrc.png" width="40%">
 
 <p><small>Theme by <a href="https://github.com/orderedlist">orderedlist</a>.<br>Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a>.</small></p>
