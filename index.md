@@ -31,6 +31,7 @@ Alongside traditional forms of academic output, I value science communication to
 - I've presented twice at the annual [Pint of Science](https://pintofscience.co.uk/) festival (2023 & 2024)
 - I volunteered at the [Norwich Science Festival](https://norwichsciencefestival.co.uk/) 2024 to communicate the science conducted at TSL
 - I presented an Accessible Science talk at the [JIC Year 10 Science Camp](https://www.jic.ac.uk/training-careers/work-experience/year-10-science-camp/) 2024.
+- 
 I'm keen to develop and participate in new ways to communicate science in Norwich, the UK, and abroad.
 
 ---
