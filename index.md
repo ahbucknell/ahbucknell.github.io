@@ -3,13 +3,13 @@ I'm Angus, and I'm a PhD candidate within the Talbot Group at The Sainsbury Labo
 
 ---
 
+\* indicates joint authorship. 
 ### Publications
 1. **Bucknell, A. H.**, and McDonald, M. C. (2023). That's no moon, it's a *Starship*: Giant transposons driving fungal horizontal gene transfer. *Molecular Microbiology*, 120, 555–563. doi: [10.1111/mmi.15118](https://doi.org/10.1111/mmi.15118)
 
 ### Pre-prints
-\* indicates joint authorship. 
-
 1. **Bucknell, A. H.\***, Wilson, H. M.\*, Gonçalves do Santos, K. C., Simpfendorfer, S., Milgate, A., Germain, H., Solomon, P. S., Bentham, A. R., and McDonald, M. C. (2024). Sanctuary: A Starship transposon facilitating the movement of the virulence factor ToxA in fungal wheat pathogens. *biorXiv*. doi: [10.1101/2024.03.04.583430](https://doi.org/10.1101/2024.03.04.583430)
+2. Tagirdzhanova G., Scharnagl K., Sahu N., Yan X., **Bucknell A. H.**, Bentham A. R., Jégousse C., Ament-Velàsquez S. L., Brännström I. O., Johannesson H., MacLean D., Talbot N. J. (2024). Multipartite complexity of the lichen symbiosis revealed by metagenome and transcriptome analysis of Xanthoria parietina. *biorXiv*. doi: [10.1101/2024.08.16.608140](https://doi.org/10.1101/2024.08.16.608140).
 
 ---
 
@@ -44,7 +44,7 @@ I'm keen to develop and participate in new ways to communicate science in Norwic
 ### Master's research
 Transposons are mobile genetic elements that can 'jump' throughout the genome of an organism. This process occurs through either a 'copy-and-paste' or 'cut-and-paste' mechanism. Typically transposons offer litte benefit to the host organism, instead often disrupting other genes and causing genomic instability. One exception to the deleterious nature of transposons are the *Starship* transposons. *Starships* often provide a fitness benefit to the host organism, are often significantly larger, and use a unique method for the 'cut-and-paste' process.
 
-[Click here](ahbucknell.github.io/masters) to learn more about my Master's research on the *Starship* transposon, *Sanctuary*.
+[Click here](masters) to learn more about my Master's research on the *Starship* transposon, *Sanctuary*.
 
 ---
 
