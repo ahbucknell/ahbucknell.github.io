@@ -1,5 +1,4 @@
-## Hello!
-I'm Angus, and I'm a PhD candidate within the Talbot Group at The Sainsbury Laboratory, Norwich, UK. I study the function of effector proteins within the fungal phytopathogen *Magnaporthe oryzae*. Previously I completed my undergraduate integrated Master's degree at the University of Birmingham.
+
 
 ---
 
