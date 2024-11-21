@@ -45,11 +45,6 @@ I'm keen to develop and participate in new ways to communicate science in Norwic
 
 [Click here](phd) to learn more about my PhD research into *M. oryzae* effectors.
 
-### Master's research
-Transposons are mobile genetic elements that can 'jump' throughout the genome of an organism. This process occurs through either a 'copy-and-paste' or 'cut-and-paste' mechanism. Typically transposons offer litte benefit to the host organism, instead often disrupting other genes and causing genomic instability. One exception to the deleterious nature of transposons are the *Starship* transposons. *Starships* often provide a fitness benefit to the host organism, are often significantly larger, and use a unique method for the 'cut-and-paste' process.
-
-[Click here](masters) to learn more about my Master's research on the *Starship* transposon, *Sanctuary*.
-
 ---
 
 ### Software
