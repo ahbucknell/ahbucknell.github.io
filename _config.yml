@@ -1,7 +1,6 @@
 title: Angus H. Bucknell # your name (or website title) here
 logo: "/images/circle.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  <br>Hello! I'm Angus, a PhD candidate within the Talbot Group at The Sainsbury Laboratory (Norwich, UK).<br><br>I study the function of effector proteins within the fungal phytopathogen <i>Magnaporthe oryzae</i>.
   
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
