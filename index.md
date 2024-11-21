@@ -1,4 +1,7 @@
+# Hello!
+I'm a second year PhD student within the Talbot Group at The Sainsbury Laboratory, Norwich, UK. I study the functions of effector proteins within the _Magnaporthe oryzae_ pathosystem. I do through this molecular biology, bioinformatics, and protein design techniques.
 
+[Click here](about) for more information about me, or see below for some of my work.
 
 ---
 
