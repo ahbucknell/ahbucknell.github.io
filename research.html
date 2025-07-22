@@ -6,7 +6,7 @@
 -->
 <html>
     <head>
-        <title>My Research</title>
+        <title>PhD Research</title>
         <meta charset="utf-8" />
         <meta
             name="viewport"
@@ -26,9 +26,18 @@
         <div id="wrapper">
             <!-- Header -->
             <header id="header">
-                <h1>My Research</h1>
+                <h1>PhD Research</h1>
                 <br />
             </header>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#intro" class="active">About Me</a></li>
+                    <li><a href="#first">Academic History</a></li>
+                    <li><a href="#second">Output</a></li>
+                    <li><a href="#cta">SciComm</a></li>
+                </ul>
+            </nav>
 
             <!-- Main -->
             <div id="main">
@@ -39,46 +48,41 @@
                     /></span>
                     <h2>Introduction</h2>
                     <p>
-                        Donec eget ex magna. Interdum et malesuada fames ac ante
-                        ipsum primis in faucibus. Pellentesque venenatis dolor
-                        imperdiet dolor mattis sagittis. Praesent rutrum sem
-                        diam, vitae egestas enim auctor sit amet. Pellentesque
-                        leo mauris, consectetur id ipsum sit amet, fergiat.
-                        Pellentesque in mi eu massa lacinia malesuada et a elit.
-                        Donec urna ex, lacinia in purus ac, pretium pulvinar
-                        mauris. Curabitur sapien risus, commodo eget turpis at,
-                        elementum convallis fames ac ante ipsum primis in
-                        faucibus.
+                          <figure class="image right">
+                            <img src="images/lesions.png" style="height:20vw;width:auto;" alt="" />
+                            <figcaption class="fig-text">Early blast lesions on barley.<br>Imaged by 
+                                <a href="https://www.jic.ac.uk/people/phil-robinson/" target="_blank" rel="noopener noreferrer">Phil Robinson</a>.</figcaption>
+                        </figure>
+                        <i>Magnaporthe oryzae</i> is a fungus that infects many different
+                        types of plants with blast disease. Hosts include, but are not limited to,
+                        many economically important crops such as rice, barley, millet, and wheat.
+                        It is considered one of the most devastating plant fungal pathogens, 
+                        and is responsible for the loss of 30% of rice produced worldwide each year<sup><b><a href="research.html#ref1">1</a></b></sup>.
+                        
+                    </p>
+                    <p>
+                        During the process of infection, the fungus secretes specialised proteins into the plant cell.
+                        These proteins are called <b>effectors</b>, and promote the infection process through various means.
+                        The effectors can be detected by components of the plant intracellular immune system known as <b>NLRs</b>.
+                        After the effector is detected by the NLR, or a pair of NLRs, an effector-triggered immune response occurs.
+                        The consequence of this immune response can vary, but often involves killing the infected host plant cell and the invading fungus inside.
+
+                    </p>
+                    <p>
+                        Understanding what these fungal effector proteins do, how they're recognised by NLRs, and by which NLRs (if any) are important questions to answer. 
+                        Without answering these, generating novel resistance against blast disease is not achievable. 
+                    </p>
+                    <p>
+                        To answer these questions, we employ <b>novel protein design</b> techniques to generate completely new-to-nature proteins that bind to target effectors.
+                        While protein engineering has been a core technique within molecular plant sciences, it has been limited to modifying natural proteins. 
+                        The ability to generate new-to-nature proteins unlocks new ways to explore effector function and is an advancement in current methods to 
+                        broaden effector recognition by NLRs.
                     </p>
                     <h2>
-                        <b>Project 01:</b> Development of new-to-nature protein
-                        binders for the <i>M. oryzae</i> pathosystem
+                        Intregrating <i>de novo</i> proteins into NLRs to expand effector recognition
                     </h2>
                     <p>
-                        <span class="image left"
-                            ><img src="images/figure1.svg" alt="" /><b
-                                >Figure 1:</b
-                            >
-                            Pii_10_04 binder<br /></span
-                        >Protein engineering is a key tool for plant science
-                        research. Often this took the form of altering
-                        pre-existing proteins. This was useful to better
-                        understand protein function and optimise desired traits.
-                        Recent breakthroughs in machine learning (ML) have
-                        resulted in significant advances in ML-driven protein
-                        design. Using tools such as RFdiffusion and ProteinMPNN,
-                        we can generate new-to-nature proteins capable of
-                        binding to specified target proteins. Combined with
-                        AF2-multimer to validate structures in-silico, this
-                        pipeline allows the generation of novel proteins whose
-                        interactions can then be tested in the lab. Currently,
-                        this pipeline has been used within mammalian biology
-                        with experimental success. My research focuses on
-                        applying this pipeline to fungal pathosystems, using the
-                        rice-Magnaporthe pathosystem as an example.
                     </p>
-                    <p>This project is highly collobarative between Mark Ban</p>
-                    <br />
                     <h2>
                         <b>Project 02:</b> Predicting
                         <i>Magnaporthe</i> effector protein function via
@@ -108,7 +112,7 @@
                         commodo massa arcu.
                     </p>
                     <ol>
-                        <li>Reference</li>
+                        <li id="ref1">Nalley L., Tsiboe F., Durand-Morat A., Shew A., and Thoma G. (2016). Economic and Environmental Impact of Rice Blast Pathogen (Magnaporthe oryzae) Alleviation in the United States. <i>PLoS One</i>, 11(12). doi: <a href="https://doi.org/10.1371/journal.pone.0167295" target="_blank" rel="noopener noreferrer">10.1371/journal.pone.0167295</a>.</li>
                     </ol>
                 </section>
             </div>
