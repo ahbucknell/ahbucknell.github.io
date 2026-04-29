@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Output — Angus Bucknell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg:        #f8f7f4;
+      --bg-dark:   #1e3028;
+      --ink:       #1a2e22;
+      --ink-muted: #4a6558;
+      --green:     #2d4a3e;
+      --sage:      #5a8a72;
+      --mint:      #c8ddd4;
+      --paper:     #f0ede6;
+      --border:    #dde8e3;
+      --serif:     'DM Serif Display', Georgia, serif;
+      --sans:      'DM Sans', system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* ─── Nav ─────────────────────────────────────────────────── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 48px;
+      height: 60px;
+      background: rgba(248,247,244,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-name {
+      font-family: var(--serif);
+      font-size: 1rem;
+      color: var(--green);
+    }
+    .nav-links {
+      display: flex;
+      gap: 36px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--sage); }
+
+    /* ─── Section layout ──────────────────────────────────────── */
+    .pub-section {
+      padding: 80px 80px;
+    }
+    .pub-section-inner {
+      max-width: 1060px;
+      margin: 0 auto;
+    }
+    .pub-section:nth-child(even) { background: var(--paper); }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--sage);
+      margin-bottom: 12px;
+    }
+    .section-label::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 1px;
+      background: var(--sage);
+    }
+    h2.section-title {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      color: var(--ink);
+      margin-bottom: 48px;
+      letter-spacing: -0.01em;
+    }
+
+    /* ─── Publication entries ─────────────────────────────────── */
+    .pub-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .pub-entry {
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 28px;
+      padding: 32px 0;
+      border-bottom: 1px solid var(--border);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .pub-entry.visible { opacity: 1; transform: translateY(0); }
+    .pub-entry:first-child { border-top: 1px solid var(--border); }
+
+    .pub-year {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--sage);
+      letter-spacing: 0.04em;
+      padding-top: 3px;
+    }
+    .pub-body {}
+    .pub-title {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      color: var(--ink);
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+    .pub-authors {
+      font-size: 0.85rem;
+      color: var(--ink-muted);
+      font-weight: 300;
+      margin-bottom: 6px;
+    }
+    .pub-authors strong {
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .pub-abstract {
+      font-size: 0.85rem;
+      color: var(--ink-muted);
+      font-weight: 300;
+      line-height: 1.7;
+      max-width: 720px;
+      margin-bottom: 16px;
+      display: none;
+    }
+    .pub-abstract.open { display: block; }
+    .pub-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .pub-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 2px;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+    .badge-journal {
+      background: rgba(90,138,114,0.12);
+      border: 1px solid rgba(90,138,114,0.25);
+      color: var(--sage);
+    }
+    .badge-preprint {
+      background: rgba(200,221,212,0.15);
+      border: 1px solid rgba(200,221,212,0.3);
+      color: var(--ink-muted);
+    }
+    .badge-inprep {
+      background: rgba(240,237,230,0.8);
+      border: 1px solid var(--border);
+      color: var(--ink-muted);
+    }
+    .pub-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--sage);
+      letter-spacing: 0.04em;
+      padding: 4px 0;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .pub-link:hover { border-bottom-color: var(--sage); }
+    .pub-link svg { flex-shrink: 0; }
+    .abstract-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--ink-muted);
+      letter-spacing: 0.04em;
+      font-family: var(--sans);
+      padding: 4px 0;
+      transition: color 0.15s;
+    }
+    .abstract-toggle:hover { color: var(--sage); }
+    .toggle-arrow {
+      display: inline-block;
+      transition: transform 0.2s;
+      font-style: normal;
+    }
+    .abstract-toggle.open .toggle-arrow { transform: rotate(180deg); }
+
+    /* ─── Conference entries ──────────────────────────────────── */
+    .conf-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .conf-entry {
+      display: grid;
+      grid-template-columns: 56px 1fr auto;
+      gap: 24px;
+      align-items: start;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .conf-entry.visible { opacity: 1; transform: translateY(0); }
+    .conf-entry:first-child { border-top: 1px solid var(--border); }
+    .conf-year {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--sage);
+      letter-spacing: 0.04em;
+      padding-top: 3px;
+    }
+    .conf-title {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+    .conf-event {
+      font-size: 0.82rem;
+      color: var(--ink-muted);
+      font-weight: 300;
+    }
+    .conf-location {
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+      font-weight: 300;
+      font-style: italic;
+    }
+    .conf-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--sage);
+      letter-spacing: 0.04em;
+      padding: 4px 0;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .conf-link:hover { border-bottom-color: var(--sage); }
+    .conf-type {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 2px;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .type-talk {
+      background: rgba(45,74,62,0.1);
+      border: 1px solid rgba(45,74,62,0.2);
+      color: var(--green);
+    }
+    .type-poster {
+      background: rgba(200,221,212,0.2);
+      border: 1px solid rgba(200,221,212,0.4);
+      color: var(--ink-muted);
+    }
+
+    /* ─── Footer ──────────────────────────────────────────────── */
+    footer {
+      background: #1e3028;
+      padding: 40px 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-name {
+      font-family: var(--serif);
+      font-size: 1rem;
+      color: #e8f0ec;
+    }
+    .footer-copy {
+      font-size: 0.75rem;
+      color: #4a6558;
+    }
+
+    /* ─── Responsive ──────────────────────────────────────────── */
+    @media (max-width: 860px) {
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .pub-section { padding: 64px 24px; }
+      .pub-entry { grid-template-columns: 44px 1fr; gap: 16px; }
+      .conf-entry { grid-template-columns: 44px 1fr; gap: 16px; }
+      .conf-type { display: none; }
+      footer { flex-direction: column; gap: 12px; padding: 32px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-name">Angus Bucknell</a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#research">Research</a></li>
+    <li><a href="index.html#experience">Experience</a></li>
+    <li><a href="index.html#education">Education</a></li>
+    <li><a href="publications.html" class="active">Output</a></li>
+    <li><a href="index.html#cv">CV</a></li>
+  </ul>
+</nav>
+
+<!-- PAPERS & PREPRINTS -->
+<div class="pub-section" id="papers">
+  <div class="pub-section-inner">
+    <div class="section-label">Research articles</div>
+    <h2 class="section-title">Papers &amp; preprints</h2>
+    <div class="pub-list">
+
+      <div class="pub-entry">
+        <div class="pub-year">2025</div>
+        <div class="pub-body">
+          <div class="pub-title">Tangerine: a Starship-like element in the genomes of Xanthoria lichen-forming fungi</div>
+          <div class="pub-authors">Tagirdzhanova G., <strong>Bucknell A. H.</strong>, Cameron E. S., Finn R. D., Blaxter M., McDonald M. C. &amp; Talbot N. J.</div>
+          <div class="pub-abstract" id="abs-1">
+            Placeholder abstract — paste your real abstract here.
+          </div>
+          <div class="pub-actions">
+            <button class="abstract-toggle" onclick="toggleAbstract('abs-1', this)">Abstract <span class="toggle-arrow">↓</span></button>
+            <a href="https://doi.org/10.1101/2025.11.25.690456" target="_blank" rel="noopener noreferrer" class="pub-link">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              DOI
+            </a>
+            <span class="pub-badge badge-preprint">bioRxiv</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-year">2025</div>
+        <div class="pub-body">
+          <div class="pub-title">Sanctuary: A Starship transposon facilitating the movement of the virulence factor ToxA in fungal wheat pathogens</div>
+          <div class="pub-authors"><strong>Bucknell A. H.</strong>*, Wilson H. M.*, Gonçalves do Santos K. C., Simpfendorfer S., Milgate A., Germain H., Solomon P. S., Bentham A. R. &amp; McDonald M. C.</div>
+          <div class="pub-abstract" id="abs-2">
+            Placeholder abstract — paste your real abstract here.
+          </div>
+          <div class="pub-actions">
+            <button class="abstract-toggle" onclick="toggleAbstract('abs-2', this)">Abstract <span class="toggle-arrow">↓</span></button>
+            <a href="https://doi.org/10.1128/mbio.01371-25" target="_blank" rel="noopener noreferrer" class="pub-link">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              DOI
+            </a>
+            <span class="pub-badge badge-journal">mBio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-year">2024</div>
+        <div class="pub-body">
+          <div class="pub-title">Complexity of the lichen symbiosis revealed by metagenome and transcriptome analysis of Xanthoria parietina</div>
+          <div class="pub-authors">Tagirdzhanova G., Scharnagl K., Sahu N., Yan X., <strong>Bucknell A. H.</strong>, Bentham A. R., Jégousse C., Ament-Velàsquez S. L., Brännström I. O., Johannesson H., MacLean D. &amp; Talbot N. J.</div>
+          <div class="pub-abstract" id="abs-3">
+            Placeholder abstract — paste your real abstract here.
+          </div>
+          <div class="pub-actions">
+            <button class="abstract-toggle" onclick="toggleAbstract('abs-3', this)">Abstract <span class="toggle-arrow">↓</span></button>
+            <a href="https://doi.org/10.1016/j.cub.2024.12.041" target="_blank" rel="noopener noreferrer" class="pub-link">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              DOI
+            </a>
+            <span class="pub-badge badge-journal">Curr. Biol.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-year">2023</div>
+        <div class="pub-body">
+          <div class="pub-title">That's no moon, it's a Starship: Giant transposons driving fungal horizontal gene transfer</div>
+          <div class="pub-authors"><strong>Bucknell A. H.</strong> &amp; McDonald M. C.</div>
+          <div class="pub-abstract" id="abs-4">
+            Placeholder abstract — paste your real abstract here.
+          </div>
+          <div class="pub-actions">
+            <button class="abstract-toggle" onclick="toggleAbstract('abs-4', this)">Abstract <span class="toggle-arrow">↓</span></button>
+            <a href="https://doi.org/10.1111/mmi.15118" target="_blank" rel="noopener noreferrer" class="pub-link">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              DOI
+            </a>
+            <span class="pub-badge badge-journal">Mol. Microbiol.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <p style="font-size: 0.78rem; color: var(--ink-muted); margin-top: 24px;">* indicates co-first authorship</p>
+  </div>
+</div>
+
+<!-- CONFERENCES -->
+<div class="pub-section" id="conferences">
+  <div class="pub-section-inner">
+    <div class="section-label">Conferences</div>
+    <h2 class="section-title">Posters &amp; talks</h2>
+    <div class="conf-list">
+
+      <div class="conf-entry">
+        <div class="conf-year">2025</div>
+        <div>
+          <div class="conf-title">[Placeholder: talk or poster title]</div>
+          <div class="conf-event">[Conference name]</div>
+          <div class="conf-location">[City, Country]</div>
+        </div>
+        <span class="conf-type type-talk">Talk</span>
+      </div>
+
+      <div class="conf-entry">
+        <div class="conf-year">2025</div>
+        <div>
+          <div class="conf-title">[Placeholder: poster title]</div>
+          <div class="conf-event">[Conference name]</div>
+          <div class="conf-location">[City, Country]</div>
+          <a href="#" class="conf-link" target="_blank" rel="noopener noreferrer">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View on Zenodo
+          </a>
+        </div>
+        <span class="conf-type type-poster">Poster</span>
+      </div>
+
+      <div class="conf-entry">
+        <div class="conf-year">2024</div>
+        <div>
+          <div class="conf-title">[Placeholder: talk or poster title]</div>
+          <div class="conf-event">[Conference name]</div>
+          <div class="conf-location">[City, Country]</div>
+        </div>
+        <span class="conf-type type-talk">Talk</span>
+      </div>
+
+      <div class="conf-entry">
+        <div class="conf-year">2024</div>
+        <div>
+          <div class="conf-title">[Placeholder: poster title]</div>
+          <div class="conf-event">[Conference name]</div>
+          <div class="conf-location">[City, Country]</div>
+          <a href="#" class="conf-link" target="_blank" rel="noopener noreferrer">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View on Zenodo
+          </a>
+        </div>
+        <span class="conf-type type-poster">Poster</span>
+      </div>
+
+      <div class="conf-entry">
+        <div class="conf-year">2024</div>
+        <div>
+          <div class="conf-title">[Placeholder: poster title]</div>
+          <div class="conf-event">[Conference name]</div>
+          <div class="conf-location">[City, Country]</div>
+          <a href="#" class="conf-link" target="_blank" rel="noopener noreferrer">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View on Zenodo
+          </a>
+        </div>
+        <span class="conf-type type-poster">Poster</span>
+      </div>
+
+      <div class="conf-entry">
+        <div class="conf-year">2023</div>
+        <div>
+          <div class="conf-title">[Placeholder: talk or poster title]</div>
+          <div class="conf-event">[Conference name]</div>
+          <div class="conf-location">[City, Country]</div>
+        </div>
+        <span class="conf-type type-talk">Talk</span>
+      </div>
+
+      <div class="conf-entry">
+        <div class="conf-year">2023</div>
+        <div>
+          <div class="conf-title">[Placeholder: poster title]</div>
+          <div class="conf-event">[Conference name]</div>
+          <div class="conf-location">[City, Country]</div>
+          <a href="#" class="conf-link" target="_blank" rel="noopener noreferrer">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View on Zenodo
+          </a>
+        </div>
+        <span class="conf-type type-poster">Poster</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-name">Angus Bucknell</span>
+  <span class="footer-copy">PhD Candidate · The Sainsbury Laboratory · Norwich, UK</span>
+</footer>
+
+<script>
+  function toggleAbstract(id, btn) {
+    const el = document.getElementById(id);
+    const open = el.classList.toggle('open');
+    btn.classList.toggle('open', open);
+  }
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.pub-entry, .conf-entry').forEach((el, i) => {
+    el.style.transitionDelay = `${(i % 5) * 0.07}s`;
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>

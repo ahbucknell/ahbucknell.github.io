@@ -1,288 +1,491 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Angus Bucknell — PhD Candidate, TSL</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Angus Bucknell — PhD Candidate, TSL</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <!-- HERO -->
+        <section id="hero">
+            <canvas id="network-canvas"></canvas>
+            <div class="hero-content">
+                <div class="hero-eyebrow">
+                    PhD Candidate · The Sainsbury Laboratory · Norwich, UK
+                </div>
+                <h1 class="hero-name">Angus<br /><em>Bucknell</em></h1>
+                <p class="hero-description">
+                    Using novel protein design and structural bioinformatics to
+                    decode effector function in the fungal plant pathogen
+                    <em style="color: var(--mint); font-style: italic"
+                        >Magnaporthe oryzae</em
+                    >.
+                </p>
+                <div class="hero-links">
+                    <a href="#research" class="btn btn-primary"
+                        >Explore my research</a
+                    >
+                    <a href="#cv" class="btn btn-outline">Get in touch</a>
+                </div>
+            </div>
+            <div class="hero-scroll-hint">
+                <span class="scroll-line"></span>
+                Scroll to explore
+            </div>
+        </section>
 
-<!-- HERO -->
-<section id="hero">
-  <canvas id="network-canvas"></canvas>
-  <div class="hero-content">
-    <div class="hero-eyebrow">PhD Candidate · The Sainsbury Laboratory · Norwich, UK</div>
-    <h1 class="hero-name">Angus<br /><em>Bucknell</em></h1>
-    <p class="hero-description">
-      Using novel protein design and structural bioinformatics to decode effector function in the fungal plant pathogen <em style="color:var(--mint);font-style:italic;">Magnaporthe oryzae</em>.
-    </p>
-    <div class="hero-links">
-      <a href="#research" class="btn btn-primary">Explore my research</a>
-      <a href="#cv" class="btn btn-outline">Get in touch</a>
-    </div>
-  </div>
-  <div class="hero-scroll-hint">
-    <span class="scroll-line"></span>
-    Scroll to explore
-  </div>
-</section>
+        <!-- STICKY NAV (sits between Hero and About; sticks once About is in view) -->
+        <nav id="main-nav">
+            <span class="nav-name">Angus Bucknell</span>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="publications.html">Output</a></li>
+                <li><a href="#cv">Contact</a></li>
+            </ul>
+        </nav>
 
-<!-- STICKY NAV (sits between Hero and About; sticks once About is in view) -->
-<nav id="main-nav">
-  <span class="nav-name">Angus Bucknell</span>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#research">Research</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#publications">Publications</a></li>
-    <li><a href="#cv">Contact</a></li>
-  </ul>
-</nav>
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="section-inner">
+                <div class="section-label">About me</div>
+                <div class="about-grid">
+                    <div class="about-photo-wrap reveal">
+                        <img src="images/headshot.jpeg" alt="Angus Bucknell" />
+                    </div>
+                    <div class="about-text">
+                        <h2 class="section-title" style="margin-bottom: 28px">
+                            Decoding the mechanisms of
+                            <em style="font-style: italic; color: var(--sage)"
+                                >fungal invaders</em
+                            >
+                        </h2>
+                        <p class="reveal reveal-delay-1">
+                            I'm a PhD candidate at
+                            <strong>The Sainsbury Laboratory (TSL)</strong>,
+                            Norwich, UK. Supervised by
+                            <strong>Prof. Nick Talbot</strong>, my work focuses
+                            on the molecular biology of the blast fungus
+                            <em>Magnaporthe oryzae</em>.
+                        </p>
+                        <p class="reveal reveal-delay-2">
+                            To infect plants, <em>M. oryzae</em> secretes
+                            effector proteins that suppress immunity and promote
+                            pathogenesis. I use
+                            <strong>novel protein design</strong> and
+                            <strong>computational, structural methods</strong>
+                            to probe how these effectors function. Through this,
+                            we develop tools to answer questions that are
+                            difficult to address through traditional genetical
+                            approaches.
+                        </p>
+                        <p class="reveal reveal-delay-3">
+                            Alongside my research, I care about science
+                            communication and making complex biology accessible,
+                            primarily through public engagement talks.
+                        </p>
+                        <div class="about-tags reveal reveal-delay-4">
+                            <span class="tag">Magnaporthe oryzae</span>
+                            <span class="tag">Effector biology</span>
+                            <span class="tag">Novel protein design</span>
+                            <span class="tag">Structural bioinformatics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-inner">
-    <div class="section-label">About me</div>
-    <div class="about-grid">
-      <div class="about-photo-wrap reveal">
-        <img src="images/headshot.jpeg" alt="Angus Bucknell" />
-      </div>
-      <div class="about-text">
-        <h2 class="section-title" style="margin-bottom:28px;">Decoding the arsenal of<br /><em style="font-style:italic;color:var(--sage);">fungal invaders</em></h2>
-        <p class="reveal reveal-delay-1">
-          I'm a PhD candidate at <strong>The Sainsbury Laboratory (TSL)</strong>, one of the world's leading plant science institutes in Norwich, UK. Supervised by <strong>Prof. Nick Talbot</strong>, my work focuses on the molecular biology of the blast fungus <em>Magnaporthe oryzae</em> — one of the most destructive crop pathogens on the planet.
-        </p>
-        <p class="reveal reveal-delay-2">
-          To infect plants, <em>M. oryzae</em> secretes effector proteins that suppress immunity and manipulate host biology. I use <strong>novel protein design</strong> and <strong>computational structural methods</strong> to probe how these effectors function — developing tools to answer questions that are difficult to address through conventional fungal genetics.
-        </p>
-        <p class="reveal reveal-delay-3">
-          Alongside computational and bench work, I care about science communication and making complex biology accessible — from public talks at Pint of Science to open-data workflows.
-        </p>
-        <div class="about-tags reveal reveal-delay-4">
-          <span class="tag">Magnaporthe oryzae</span>
-          <span class="tag">Effector biology</span>
-          <span class="tag">Novel protein design</span>
-          <span class="tag">AlphaFold / AI structure prediction</span>
-          <span class="tag">Structural bioinformatics</span>
-          <span class="tag">Python / Snakemake</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        <!-- CURRENT RESEARCH -->
+        <section id="research">
+            <div class="section-inner">
+                <div class="section-label">Current research</div>
+                <h2 class="section-title">What I'm working on now</h2>
+                <div class="research-grid">
+                    <div class="research-card reveal reveal-delay-1">
+                        <div class="rc-number">01</div>
+                        <div class="rc-title">
+                            Novel protein design for effector characterisation
+                        </div>
+                        <div class="rc-body">
+                            Using protein design to probe the molecular function
+                            of <em>M. oryzae</em> effectors. We hope these
+                            methods bypass the limitations of traditional
+                            genetical methods to answer previously intractable
+                            biological questions.
+                        </div>
+                    </div>
+                    <div class="research-card reveal reveal-delay-2">
+                        <div class="rc-number">02</div>
+                        <div class="rc-title">
+                            High-throughput structural prediction of effectors
+                        </div>
+                        <div class="rc-body">
+                            Using high-throughput structural modelling, I
+                            predict effector function and prioritse targets for
+                            further analysis.
+                        </div>
+                    </div>
+                    <div class="research-card reveal reveal-delay-3">
+                        <div class="rc-number">03</div>
+                        <div class="rc-title">
+                            Analysis of <em>Starships</em> transposons
+                        </div>
+                        <div class="rc-body">
+                            Building computational workflows that combine
+                            structure prediction, surface chemistry, and
+                            conservation data to prioritise experimentally
+                            testable hypotheses for wet-lab follow-up.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- CURRENT RESEARCH -->
-<section id="research">
-  <div class="section-inner">
-    <div class="section-label">Current research</div>
-    <h2 class="section-title">What I'm working on now</h2>
-    <div class="research-grid">
-      <div class="research-card reveal reveal-delay-1">
-        <div class="rc-number">01</div>
-        <div class="rc-title">Novel protein design for effector investigation</div>
-        <div class="rc-body">Developing protein design tools to directly probe the molecular function of <em>M. oryzae</em> effectors — bypassing the limitations of classical fungal genetics to access previously intractable biological questions.</div>
-      </div>
-      <div class="research-card reveal reveal-delay-2">
-        <div class="rc-number">02</div>
-        <div class="rc-title">Structural characterisation of fungal effectors</div>
-        <div class="rc-body">Applying AlphaFold2-Multimer, molecular docking, and evolutionary conservation analysis to model the three-dimensional architecture of <em>M. oryzae</em> effectors and identify functional sites.</div>
-      </div>
-      <div class="research-card reveal reveal-delay-3">
-        <div class="rc-number">03</div>
-        <div class="rc-title">Integrated structural bioinformatics pipelines</div>
-        <div class="rc-body">Building computational workflows that combine structure prediction, surface chemistry, and conservation data to prioritise experimentally testable hypotheses for wet-lab follow-up.</div>
-      </div>
-    </div>
-  </div>
-</section>
+        <!-- EXPERIENCE -->
+        <section id="experience">
+            <div class="section-inner">
+                <div class="section-label">Research experience</div>
+                <h2 class="section-title">Where I've worked</h2>
+                <div class="timeline">
+                    <div class="tl-item reveal">
+                        <div class="tl-date">
+                            <div class="tl-date-range">2023 — present</div>
+                            <div class="tl-date-inst">Norwich, UK</div>
+                        </div>
+                        <div class="tl-spine"></div>
+                        <div class="tl-content">
+                            <div class="tl-role">PhD Researcher</div>
+                            <div class="tl-lab">The Sainsbury Laboratory</div>
+                            <div class="tl-desc">
+                                Doctoral research on effector function in
+                                <em>Magnaporthe oryzae</em> using novel protein
+                                design and structural bioinformatics. Supervised
+                                by Prof. Nick Talbot. Funded by the NRPDTP
+                                (BBSRC grant BB/T008717/1).
+                            </div>
+                        </div>
+                    </div>
 
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="section-inner">
-    <div class="section-label">Research experience</div>
-    <h2 class="section-title">Where I've worked</h2>
-    <div class="timeline">
+                    <div class="tl-item reveal reveal-delay-1">
+                        <div class="tl-date">
+                            <div class="tl-date-range">Jun — Aug 2025</div>
+                            <div class="tl-date-inst">Norwich, UK</div>
+                        </div>
+                        <div class="tl-spine"></div>
+                        <div class="tl-content">
+                            <div class="tl-role">PIPS Intern</div>
+                            <div class="tl-lab">Sequence Analysis UK</div>
+                            <div class="tl-desc">
+                                Working under Dr. Lisa Crossman, analysed
+                                metagenome-assembled genomes (MAGs) as part of
+                                the
+                                <a
+                                    href="https://wishfiji.sydney.edu.au/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >WISH Fiji project</a
+                                >.
+                            </div>
+                        </div>
+                    </div>
 
-      <div class="tl-item reveal">
-        <div class="tl-date">
-          <div class="tl-date-range">2023 — present</div>
-          <div class="tl-date-inst">Norwich, UK</div>
-        </div>
-        <div class="tl-spine"></div>
-        <div class="tl-content">
-          <div class="tl-role">PhD Researcher</div>
-          <div class="tl-lab">The Sainsbury Laboratory</div>
-          <div class="tl-desc">Doctoral research on effector function in <em>Magnaporthe oryzae</em> using novel protein design and structural bioinformatics. Supervised by Prof. Nick Talbot. Funded by the NRPDTP (BBSRC grant BB/T008717/1).</div>
-        </div>
-      </div>
+                    <div class="tl-item reveal reveal-delay-2">
+                        <div class="tl-date">
+                            <div class="tl-date-range">Jul — Aug 2022</div>
+                            <div class="tl-date-inst">Vienna, AT</div>
+                        </div>
+                        <div class="tl-spine"></div>
+                        <div class="tl-content">
+                            <div class="tl-role">VBC Summer School</div>
+                            <div class="tl-lab">Gregor Mendel Institute</div>
+                            <div class="tl-desc">
+                                Joined Dr. Arturo Marí-Ordóñez as part of the
+                                Vienna BioCenter Summer School, investigating
+                                transposon silencing mechanisms in Duckweed (<em
+                                    >Spirodela polyrhiza</em
+                                >).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <div class="tl-item reveal reveal-delay-1">
-        <div class="tl-date">
-          <div class="tl-date-range">Jun — Aug 2025</div>
-          <div class="tl-date-inst">Norwich, UK</div>
-        </div>
-        <div class="tl-spine"></div>
-        <div class="tl-content">
-          <div class="tl-role">PIPS Intern</div>
-          <div class="tl-lab">Sequence Analysis UK</div>
-          <div class="tl-desc">Working under Dr. Lisa Crossman, analysed metagenome-assembled genomes (MAGs) as part of the <a href="https://wishfiji.sydney.edu.au/" target="_blank" rel="noopener noreferrer">WISH Fiji project</a>.</div>
-        </div>
-      </div>
+        <!-- EDUCATION -->
+        <section id="education">
+            <div class="section-inner">
+                <div class="section-label">Education</div>
+                <h2 class="section-title">Academic background</h2>
+                <div class="edu-grid">
+                    <div class="edu-card reveal reveal-delay-1">
+                        <div class="edu-degree">PhD, Plant Sciences</div>
+                        <div class="edu-inst">
+                            The Sainsbury Laboratory / UEA
+                        </div>
+                        <div class="edu-year">2023 – present</div>
+                        <div class="edu-detail">
+                            Doctoral research on effector biology and structural
+                            bioinformatics in <em>Magnaporthe oryzae</em>.
+                            Supervised by Prof. Nick Talbot.
+                        </div>
+                    </div>
+                    <div class="edu-card reveal reveal-delay-2">
+                        <div class="edu-degree">MSci Biological Sciences</div>
+                        <div class="edu-inst">University of Birmingham</div>
+                        <div class="edu-year">2019 – 2023</div>
+                        <div class="edu-detail">
+                            Master's research supervised by Dr. Megan McDonald,
+                            focusing on the <em>Starship</em> transposon
+                            <em>Sanctuary</em> and its role in horizontal gene
+                            transfer in fungal wheat pathogens.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <div class="tl-item reveal reveal-delay-2">
-        <div class="tl-date">
-          <div class="tl-date-range">Jul — Aug 2022</div>
-          <div class="tl-date-inst">Vienna, AT</div>
-        </div>
-        <div class="tl-spine"></div>
-        <div class="tl-content">
-          <div class="tl-role">VBC Summer School</div>
-          <div class="tl-lab">Gregor Mendel Institute</div>
-          <div class="tl-desc">Joined Dr. Arturo Marí-Ordóñez as part of the Vienna BioCenter Summer School, investigating transposon silencing mechanisms in Duckweed (<em>Spirodela polyrhiza</em>).</div>
-        </div>
-      </div>
+        <!-- PUBLICATIONS -->
+        <section id="publications">
+            <div class="section-inner">
+                <div class="section-label">Publications</div>
+                <h2 class="section-title">Publications</h2>
+                <p class="pub-note">* indicates co-first authorship</p>
+                <div class="pub-list">
+                    <a
+                        href="https://doi.org/10.1101/2025.11.25.690456"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pub-item reveal"
+                    >
+                        <div class="pub-idx">4</div>
+                        <div>
+                            <div class="pub-title">
+                                Tangerine: a Starship-like element in the
+                                genomes of Xanthoria lichen-forming fungi
+                            </div>
+                            <div class="pub-meta">
+                                Tagirdzhanova G., Bucknell A. H., Cameron E. S.,
+                                Finn R. D., Blaxter M., McDonald M. C. &amp;
+                                Talbot N. J. · 2025
+                            </div>
+                        </div>
+                        <span class="pub-status">Preprint</span>
+                    </a>
 
-    </div>
-  </div>
-</section>
+                    <a
+                        href="https://doi.org/10.1128/mbio.01371-25"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pub-item reveal reveal-delay-1"
+                    >
+                        <div class="pub-idx">3</div>
+                        <div>
+                            <div class="pub-title">
+                                Sanctuary: A Starship transposon facilitating
+                                the movement of the virulence factor ToxA in
+                                fungal wheat pathogens
+                            </div>
+                            <div class="pub-meta">
+                                Bucknell A. H.*, Wilson H. M.*, Gonçalves do
+                                Santos K. C., Simpfendorfer S., Milgate A.,
+                                Germain H., Solomon P. S., Bentham A. R. &amp;
+                                McDonald M. C. · 2025
+                            </div>
+                        </div>
+                        <span class="pub-journal">mBio</span>
+                    </a>
 
-<!-- EDUCATION -->
-<section id="education">
-  <div class="section-inner">
-    <div class="section-label">Education</div>
-    <h2 class="section-title">Academic background</h2>
-    <div class="edu-grid">
-      <div class="edu-card reveal reveal-delay-1">
-        <div class="edu-degree">PhD, Plant Sciences</div>
-        <div class="edu-inst">The Sainsbury Laboratory / UEA</div>
-        <div class="edu-year">2023 – present</div>
-        <div class="edu-detail">Doctoral research on effector biology and structural bioinformatics in <em>Magnaporthe oryzae</em>. Supervised by Prof. Nick Talbot.</div>
-      </div>
-      <div class="edu-card reveal reveal-delay-2">
-        <div class="edu-degree">MSci Biological Sciences</div>
-        <div class="edu-inst">University of Birmingham</div>
-        <div class="edu-year">2019 – 2023</div>
-        <div class="edu-detail">Master's research supervised by Dr. Megan McDonald, focusing on the <em>Starship</em> transposon <em>Sanctuary</em> and its role in horizontal gene transfer in fungal wheat pathogens.</div>
-      </div>
-    </div>
-  </div>
-</section>
+                    <a
+                        href="https://doi.org/10.1016/j.cub.2024.12.041"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pub-item reveal reveal-delay-2"
+                    >
+                        <div class="pub-idx">2</div>
+                        <div>
+                            <div class="pub-title">
+                                Complexity of the lichen symbiosis revealed by
+                                metagenome and transcriptome analysis of
+                                Xanthoria parietina
+                            </div>
+                            <div class="pub-meta">
+                                Tagirdzhanova G., Scharnagl K., Sahu N., Yan X.,
+                                Bucknell A. H., Bentham A. R., Jégousse C.,
+                                Ament-Velàsquez S. L., Brännström I. O.,
+                                Johannesson H., MacLean D. &amp; Talbot N. J. ·
+                                2024
+                            </div>
+                        </div>
+                        <span class="pub-journal">Current Biology</span>
+                    </a>
 
-<!-- PUBLICATIONS -->
-<section id="publications">
-  <div class="section-inner">
-    <div class="section-label">Publications</div>
-    <h2 class="section-title">Publications</h2>
-    <p class="pub-note">* indicates co-first authorship</p>
-    <div class="pub-list">
+                    <a
+                        href="https://doi.org/10.1111/mmi.15118"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pub-item reveal reveal-delay-3"
+                    >
+                        <div class="pub-idx">1</div>
+                        <div>
+                            <div class="pub-title">
+                                That's no moon, it's a Starship: Giant
+                                transposons driving fungal horizontal gene
+                                transfer
+                            </div>
+                            <div class="pub-meta">
+                                Bucknell A. H. &amp; McDonald M. C. · 2023
+                            </div>
+                        </div>
+                        <span class="pub-journal">Mol. Microbiology</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-      <a href="https://doi.org/10.1101/2025.11.25.690456" target="_blank" rel="noopener noreferrer" class="pub-item reveal">
-        <div class="pub-idx">4</div>
-        <div>
-          <div class="pub-title">Tangerine: a Starship-like element in the genomes of Xanthoria lichen-forming fungi</div>
-          <div class="pub-meta">Tagirdzhanova G., Bucknell A. H., Cameron E. S., Finn R. D., Blaxter M., McDonald M. C. &amp; Talbot N. J. · 2025</div>
-        </div>
-        <span class="pub-status">Preprint</span>
-      </a>
+        <!-- CV / CONTACT -->
+        <section id="cv">
+            <div class="section-inner">
+                <div class="cv-inner">
+                    <div class="cv-text">
+                        <div class="section-label">Get in touch</div>
+                        <h2 class="section-title">Contact</h2>
+                        <p>
+                            I'm always happy to hear from collaborators,
+                            students, or anyone interested in fungal biology and
+                            effector function.
+                        </p>
+                    </div>
+                    <div class="cv-links">
+                        <a
+                            href="mailto:angus.bucknell@tsl.ac.uk"
+                            class="cv-link-item reveal"
+                        >
+                            <div class="cv-link-icon">
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                    />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="cv-link-label">Email</div>
+                                <div class="cv-link-sub">
+                                    angus.bucknell@tsl.ac.uk
+                                </div>
+                            </div>
+                        </a>
 
-      <a href="https://doi.org/10.1128/mbio.01371-25" target="_blank" rel="noopener noreferrer" class="pub-item reveal reveal-delay-1">
-        <div class="pub-idx">3</div>
-        <div>
-          <div class="pub-title">Sanctuary: A Starship transposon facilitating the movement of the virulence factor ToxA in fungal wheat pathogens</div>
-          <div class="pub-meta">Bucknell A. H.*, Wilson H. M.*, Gonçalves do Santos K. C., Simpfendorfer S., Milgate A., Germain H., Solomon P. S., Bentham A. R. &amp; McDonald M. C. · 2025</div>
-        </div>
-        <span class="pub-journal">mBio</span>
-      </a>
+                        <a
+                            href="https://github.com/ahbucknell"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="cv-link-item reveal reveal-delay-1"
+                        >
+                            <div class="cv-link-icon">
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                    />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="cv-link-label">GitHub</div>
+                                <div class="cv-link-sub">@ahbucknell</div>
+                            </div>
+                        </a>
 
-      <a href="https://doi.org/10.1016/j.cub.2024.12.041" target="_blank" rel="noopener noreferrer" class="pub-item reveal reveal-delay-2">
-        <div class="pub-idx">2</div>
-        <div>
-          <div class="pub-title">Complexity of the lichen symbiosis revealed by metagenome and transcriptome analysis of Xanthoria parietina</div>
-          <div class="pub-meta">Tagirdzhanova G., Scharnagl K., Sahu N., Yan X., Bucknell A. H., Bentham A. R., Jégousse C., Ament-Velàsquez S. L., Brännström I. O., Johannesson H., MacLean D. &amp; Talbot N. J. · 2024</div>
-        </div>
-        <span class="pub-journal">Current Biology</span>
-      </a>
+                        <a
+                            href="https://orcid.org/0000-0001-6039-9330"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="cv-link-item reveal reveal-delay-2"
+                        >
+                            <div class="cv-link-icon">
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <circle cx="12" cy="12" r="10" />
+                                    <line x1="12" y1="8" x2="12" y2="12" />
+                                    <line x1="12" y1="16" x2="12.01" y2="16" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="cv-link-label">ORCID</div>
+                                <div class="cv-link-sub">
+                                    0000-0001-6039-9330
+                                </div>
+                            </div>
+                        </a>
 
-      <a href="https://doi.org/10.1111/mmi.15118" target="_blank" rel="noopener noreferrer" class="pub-item reveal reveal-delay-3">
-        <div class="pub-idx">1</div>
-        <div>
-          <div class="pub-title">That's no moon, it's a Starship: Giant transposons driving fungal horizontal gene transfer</div>
-          <div class="pub-meta">Bucknell A. H. &amp; McDonald M. C. · 2023</div>
-        </div>
-        <span class="pub-journal">Mol. Microbiology</span>
-      </a>
+                        <a
+                            href="https://bsky.app/profile/angusb.bsky.social"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="cv-link-item reveal reveal-delay-3"
+                        >
+                            <div class="cv-link-icon">
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path
+                                        d="M12 12C10 9.5 8 8 6 8S2 10 2 12s2 4 4 4 4-2 6-4zm0 0c2-2.5 4-4 6-4s4 2 4 4-2 4-4 4-4-2-6-4z"
+                                    />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="cv-link-label">Bluesky</div>
+                                <div class="cv-link-sub">
+                                    @angusb.bsky.social
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    </div>
-  </div>
-</section>
+        <!-- FOOTER -->
+        <footer>
+            <span class="footer-name">Angus Bucknell</span>
+            <span class="footer-copy"
+                >PhD Candidate · The Sainsbury Laboratory · Norwich, UK</span
+            >
+        </footer>
 
-<!-- CV / CONTACT -->
-<section id="cv">
-  <div class="section-inner">
-    <div class="cv-inner">
-      <div class="cv-text">
-        <div class="section-label">Get in touch</div>
-        <h2 class="section-title">Contact</h2>
-        <p>I'm always happy to hear from collaborators, students, or anyone interested in fungal biology and effector function.</p>
-      </div>
-      <div class="cv-links">
-
-        <a href="mailto:angus.bucknell@tsl.ac.uk" class="cv-link-item reveal">
-          <div class="cv-link-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </div>
-          <div>
-            <div class="cv-link-label">Email</div>
-            <div class="cv-link-sub">angus.bucknell@tsl.ac.uk</div>
-          </div>
-        </a>
-
-        <a href="https://github.com/ahbucknell" target="_blank" rel="noopener noreferrer" class="cv-link-item reveal reveal-delay-1">
-          <div class="cv-link-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-          </div>
-          <div>
-            <div class="cv-link-label">GitHub</div>
-            <div class="cv-link-sub">@ahbucknell</div>
-          </div>
-        </a>
-
-        <a href="https://orcid.org/0000-0001-6039-9330" target="_blank" rel="noopener noreferrer" class="cv-link-item reveal reveal-delay-2">
-          <div class="cv-link-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-          </div>
-          <div>
-            <div class="cv-link-label">ORCID</div>
-            <div class="cv-link-sub">0000-0001-6039-9330</div>
-          </div>
-        </a>
-
-        <a href="https://bsky.app/profile/angusb.bsky.social" target="_blank" rel="noopener noreferrer" class="cv-link-item reveal reveal-delay-3">
-          <div class="cv-link-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 12C10 9.5 8 8 6 8S2 10 2 12s2 4 4 4 4-2 6-4zm0 0c2-2.5 4-4 6-4s4 2 4 4-2 4-4 4-4-2-6-4z"/></svg>
-          </div>
-          <div>
-            <div class="cv-link-label">Bluesky</div>
-            <div class="cv-link-sub">@angusb.bsky.social</div>
-          </div>
-        </a>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <span class="footer-name">Angus Bucknell</span>
-  <span class="footer-copy">PhD Candidate · The Sainsbury Laboratory · Norwich, UK</span>
-</footer>
-
-<script src="assets/js/main.js"></script>
-</body>
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
