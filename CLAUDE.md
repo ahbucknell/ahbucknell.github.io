@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-A static personal academic website for Angus H. Bucknell, hosted on GitHub Pages at `www.ahbucknell.com` (CNAME configured). The site is a fully self-contained single `index.html` — no build system, no package manager, no CI/CD. It is deployed directly by GitHub Pages.
+A static personal academic website for Angus H. Bucknell, hosted on GitHub Pages at `www.ahbucknell.com` (CNAME configured). No build system, no package manager, no CI/CD — files are served directly by GitHub Pages.
 
 ## Previewing locally
 
@@ -18,15 +18,15 @@ python3 -m http.server 8000
 
 - **Palette**: forest green (`--green: #2d4a3e`), sage (`--sage: #5a8a72`), mint (`--mint: #c8ddd4`), off-white bg (`--bg: #f8f7f4`), dark green bg (`--bg-dark: #1e3028`)
 - **Typography**: DM Serif Display (headings) + DM Sans (body), loaded from Google Fonts
-- All CSS and JS are inline in `index.html` — no external stylesheet or script files are used
+- CSS variables are defined in `assets/css/style.css` under `:root`
 
 ## File structure
 
-- **`index.html`** — the entire site; all styles (inline `<style>`), content, and JS in one file
+- **`index.html`** — HTML content only (~288 lines)
+- **`assets/css/style.css`** — all styles
+- **`assets/js/main.js`** — scroll-reveal observer + hero canvas animation
 - **`images/headshot.jpeg`** — portrait photo used in the About section
-- **`research.html`** — stub page, not linked from the main nav
-- **`assets/`** — legacy assets from the old Stellar/HTML5 UP design; not referenced by the current site
-- **`elements.html`**, **`generic.html`** — HTML5 UP template demo pages, not part of the live site
+- **`images/`** — institution logos and research figures (not currently referenced by the site, kept for future use)
 
 ## Content sections in index.html
 
@@ -41,12 +41,12 @@ Sections in DOM order (anchor nav is sticky, inserted between Hero and About):
 | `#experience` | paper | Timeline of research positions |
 | `#education` | off-white | Two education cards |
 | `#publications` | dark | Numbered list of publications and pre-prints |
-| `#cv` | off-white | Two-column: intro text + contact/profile links |
+| `#cv` | off-white | Two-column: intro text + contact links (email, GitHub, ORCID, Bluesky) |
 | `<footer>` | dark | Name + affiliation |
 
 ## Hero animation
 
-The hero canvas (`#network-canvas`) runs a protein interaction network animation — drifting nodes (hub + regular) connected by proximity edges. Defined in the inline `<script>` as a self-invoking `draw()` loop using `requestAnimationFrame`.
+The hero canvas (`#network-canvas`) runs a protein interaction network animation — drifting nodes (hub + regular) connected by proximity edges. Defined in `assets/js/main.js` as a self-invoking `draw()` loop using `requestAnimationFrame`.
 
 ## Conventions
 
