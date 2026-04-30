@@ -324,6 +324,7 @@ h2.section-title {
   margin-bottom: 12px;
 }
 .tl-desc { font-size: 0.9rem; color: var(--ink-muted); font-weight: 300; max-width: 520px; }
+.tl-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 .tl-desc a { color: var(--sage); text-decoration: underline; text-decoration-color: rgba(90,138,114,0.4); }
 .tl-desc a:hover { text-decoration-color: var(--sage); }
 
