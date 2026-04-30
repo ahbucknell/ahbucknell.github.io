@@ -227,7 +227,7 @@ h2.section-title {
 #about { background: var(--bg); }
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 80px;
   align-items: start;
 }
@@ -638,6 +638,7 @@ footer {
   .hero-content { padding: 100px 24px 60px; }
   .hero-scroll-hint { left: 24px; }
   .about-grid, .cv-inner, .edu-grid { grid-template-columns: 1fr; gap: 40px; }
+  .about-photo-wrap { max-width: 260px; }
   .research-grid { grid-template-columns: 1fr; }
   .tl-item { grid-template-columns: 1fr; gap: 8px; }
   .tl-date { text-align: left; }
@@ -647,6 +648,6 @@ footer {
   footer { flex-direction: column; gap: 12px; padding: 32px 24px; text-align: center; }
   .pub-section { padding: 64px 24px; }
   .pub-entry { grid-template-columns: 44px 1fr; gap: 16px; }
-  .conf-entry { grid-template-columns: 44px 1fr; gap: 16px; }
-  .conf-type { display: none; }
+  .conf-entry { grid-template-columns: 44px 1fr; gap: 8px 16px; }
+  .conf-type { grid-column: 2; margin-top: 4px; }
 }

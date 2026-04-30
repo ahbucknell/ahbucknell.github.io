@@ -1,226 +1,455 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Output — Angus Bucknell</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Output — Angus Bucknell</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <!-- NAV -->
+        <nav>
+            <a href="index.html" class="nav-name">Angus Bucknell</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="publications.html" class="active">Output</a></li>
+                <li><a href="index.html#cv">CV</a></li>
+            </ul>
+            <button
+                class="nav-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
 
-<!-- NAV -->
-<nav>
-  <a href="index.html" class="nav-name">Angus Bucknell</a>
-  <ul class="nav-links">
-    <li><a href="index.html#about">About</a></li>
-    <li><a href="index.html#research">Research</a></li>
-    <li><a href="index.html#experience">Experience</a></li>
-    <li><a href="index.html#education">Education</a></li>
-    <li><a href="publications.html" class="active">Output</a></li>
-    <li><a href="index.html#cv">CV</a></li>
-  </ul>
-  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-</nav>
+        <!-- PAPERS & PREPRINTS -->
+        <div class="pub-section" id="papers">
+            <div class="pub-section-inner">
+                <div class="section-label">Research articles</div>
+                <h2 class="section-title">Papers &amp; preprints</h2>
+                <p
+                    style="
+                        font-size: 0.78rem;
+                        color: var(--ink-muted);
+                        margin-top: -32px;
+                        margin-bottom: 24px;
+                    "
+                >
+                    * indicates co-first authorship
+                </p>
+                <div class="pub-list">
+                    <div class="pub-entry">
+                        <div class="pub-year">2025</div>
+                        <div class="pub-body">
+                            <div class="pub-title">
+                                Tangerine: a Starship-like element in the
+                                genomes of Xanthoria lichen-forming fungi
+                            </div>
+                            <div class="pub-authors">
+                                Tagirdzhanova G.,
+                                <strong>Bucknell A. H.</strong>, Cameron E. S.,
+                                Finn R. D., Blaxter M., McDonald M. C. &amp;
+                                Talbot N. J.
+                            </div>
+                            <div class="pub-abstract" id="abs-1">
+                                Placeholder abstract — paste your real abstract
+                                here.
+                            </div>
+                            <div class="pub-actions">
+                                <button
+                                    class="abstract-toggle"
+                                    onclick="toggleAbstract('abs-1', this)"
+                                >
+                                    Abstract <span class="toggle-arrow">↓</span>
+                                </button>
+                                <a
+                                    href="https://doi.org/10.1101/2025.11.25.690456"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="pub-link"
+                                >
+                                    <svg
+                                        width="12"
+                                        height="12"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                    >
+                                        <path
+                                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                        />
+                                        <polyline points="15 3 21 3 21 9" />
+                                        <line x1="10" y1="14" x2="21" y2="3" />
+                                    </svg>
+                                    DOI
+                                </a>
+                                <span class="pub-badge badge-preprint"
+                                    >bioRxiv</span
+                                >
+                            </div>
+                        </div>
+                    </div>
 
-<!-- PAPERS & PREPRINTS -->
-<div class="pub-section" id="papers">
-  <div class="pub-section-inner">
-    <div class="section-label">Research articles</div>
-    <h2 class="section-title">Papers &amp; preprints</h2>
-    <div class="pub-list">
+                    <div class="pub-entry">
+                        <div class="pub-year">2025</div>
+                        <div class="pub-body">
+                            <div class="pub-title">
+                                Sanctuary: A Starship transposon facilitating
+                                the movement of the virulence factor ToxA in
+                                fungal wheat pathogens
+                            </div>
+                            <div class="pub-authors">
+                                <strong>Bucknell A. H.</strong>*, Wilson H. M.*,
+                                Gonçalves do Santos K. C., Simpfendorfer S.,
+                                Milgate A., Germain H., Solomon P. S., Bentham
+                                A. R. &amp; McDonald M. C.
+                            </div>
+                            <div class="pub-abstract" id="abs-2">
+                                Placeholder abstract — paste your real abstract
+                                here.
+                            </div>
+                            <div class="pub-actions">
+                                <button
+                                    class="abstract-toggle"
+                                    onclick="toggleAbstract('abs-2', this)"
+                                >
+                                    Abstract <span class="toggle-arrow">↓</span>
+                                </button>
+                                <a
+                                    href="https://doi.org/10.1128/mbio.01371-25"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="pub-link"
+                                >
+                                    <svg
+                                        width="12"
+                                        height="12"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                    >
+                                        <path
+                                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                        />
+                                        <polyline points="15 3 21 3 21 9" />
+                                        <line x1="10" y1="14" x2="21" y2="3" />
+                                    </svg>
+                                    DOI
+                                </a>
+                                <span class="pub-badge badge-journal"
+                                    >mBio</span
+                                >
+                            </div>
+                        </div>
+                    </div>
 
-      <div class="pub-entry">
-        <div class="pub-year">2025</div>
-        <div class="pub-body">
-          <div class="pub-title">Tangerine: a Starship-like element in the genomes of Xanthoria lichen-forming fungi</div>
-          <div class="pub-authors">Tagirdzhanova G., <strong>Bucknell A. H.</strong>, Cameron E. S., Finn R. D., Blaxter M., McDonald M. C. &amp; Talbot N. J.</div>
-          <div class="pub-abstract" id="abs-1">
-            Placeholder abstract — paste your real abstract here.
-          </div>
-          <div class="pub-actions">
-            <button class="abstract-toggle" onclick="toggleAbstract('abs-1', this)">Abstract <span class="toggle-arrow">↓</span></button>
-            <a href="https://doi.org/10.1101/2025.11.25.690456" target="_blank" rel="noopener noreferrer" class="pub-link">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              DOI
-            </a>
-            <span class="pub-badge badge-preprint">bioRxiv</span>
-          </div>
+                    <div class="pub-entry">
+                        <div class="pub-year">2024</div>
+                        <div class="pub-body">
+                            <div class="pub-title">
+                                Complexity of the lichen symbiosis revealed by
+                                metagenome and transcriptome analysis of
+                                Xanthoria parietina
+                            </div>
+                            <div class="pub-authors">
+                                Tagirdzhanova G., Scharnagl K., Sahu N., Yan X.,
+                                <strong>Bucknell A. H.</strong>, Bentham A. R.,
+                                Jégousse C., Ament-Velàsquez S. L., Brännström
+                                I. O., Johannesson H., MacLean D. &amp; Talbot
+                                N. J.
+                            </div>
+                            <div class="pub-abstract" id="abs-3">
+                                Placeholder abstract — paste your real abstract
+                                here.
+                            </div>
+                            <div class="pub-actions">
+                                <button
+                                    class="abstract-toggle"
+                                    onclick="toggleAbstract('abs-3', this)"
+                                >
+                                    Abstract <span class="toggle-arrow">↓</span>
+                                </button>
+                                <a
+                                    href="https://doi.org/10.1016/j.cub.2024.12.041"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="pub-link"
+                                >
+                                    <svg
+                                        width="12"
+                                        height="12"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                    >
+                                        <path
+                                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                        />
+                                        <polyline points="15 3 21 3 21 9" />
+                                        <line x1="10" y1="14" x2="21" y2="3" />
+                                    </svg>
+                                    DOI
+                                </a>
+                                <span class="pub-badge badge-journal"
+                                    >Curr. Biol.</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pub-entry">
+                        <div class="pub-year">2023</div>
+                        <div class="pub-body">
+                            <div class="pub-title">
+                                That's no moon, it's a Starship: Giant
+                                transposons driving fungal horizontal gene
+                                transfer
+                            </div>
+                            <div class="pub-authors">
+                                <strong>Bucknell A. H.</strong> &amp; McDonald
+                                M. C.
+                            </div>
+                            <div class="pub-abstract" id="abs-4">
+                                Placeholder abstract — paste your real abstract
+                                here.
+                            </div>
+                            <div class="pub-actions">
+                                <button
+                                    class="abstract-toggle"
+                                    onclick="toggleAbstract('abs-4', this)"
+                                >
+                                    Abstract <span class="toggle-arrow">↓</span>
+                                </button>
+                                <a
+                                    href="https://doi.org/10.1111/mmi.15118"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="pub-link"
+                                >
+                                    <svg
+                                        width="12"
+                                        height="12"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                    >
+                                        <path
+                                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                        />
+                                        <polyline points="15 3 21 3 21 9" />
+                                        <line x1="10" y1="14" x2="21" y2="3" />
+                                    </svg>
+                                    DOI
+                                </a>
+                                <span class="pub-badge badge-journal"
+                                    >Mol. Microbiol.</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="pub-entry">
-        <div class="pub-year">2025</div>
-        <div class="pub-body">
-          <div class="pub-title">Sanctuary: A Starship transposon facilitating the movement of the virulence factor ToxA in fungal wheat pathogens</div>
-          <div class="pub-authors"><strong>Bucknell A. H.</strong>*, Wilson H. M.*, Gonçalves do Santos K. C., Simpfendorfer S., Milgate A., Germain H., Solomon P. S., Bentham A. R. &amp; McDonald M. C.</div>
-          <div class="pub-abstract" id="abs-2">
-            Placeholder abstract — paste your real abstract here.
-          </div>
-          <div class="pub-actions">
-            <button class="abstract-toggle" onclick="toggleAbstract('abs-2', this)">Abstract <span class="toggle-arrow">↓</span></button>
-            <a href="https://doi.org/10.1128/mbio.01371-25" target="_blank" rel="noopener noreferrer" class="pub-link">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              DOI
-            </a>
-            <span class="pub-badge badge-journal">mBio</span>
-          </div>
+        <!-- CONFERENCES -->
+        <div class="pub-section" id="conferences">
+            <div class="pub-section-inner">
+                <div class="section-label">Conferences</div>
+                <h2 class="section-title">Posters &amp; talks</h2>
+                <div class="conf-list">
+                    <div class="conf-entry">
+                        <div class="conf-year">2026</div>
+                        <div>
+                            <div class="conf-title">
+                                AI-driven protein design to understand effector
+                                function within the
+                                <em>Magnaporthe oryzae</em> rice pathosystem
+                            </div>
+                            <div class="conf-event">
+                                3rd Fungal Genetics Conference
+                            </div>
+                            <div class="conf-location">Pacific Grove, US</div>
+                        </div>
+                        <span class="conf-type type-talk">Poster</span>
+                    </div>
+
+                    <div class="conf-entry">
+                        <div class="conf-year">2026</div>
+                        <div>
+                            <div class="conf-title">
+                                Structural bioinformatics to understand effector
+                                function within the
+                                <em>Magnaporthe oryzae</em> rice pathosystem
+                            </div>
+                            <div class="conf-event">
+                                33rd Fungal Genetics Conference
+                            </div>
+                            <div class="conf-location">Pacific Grove, US</div>
+                        </div>
+                        <span class="conf-type type-poster">Poster</span>
+                    </div>
+
+                    <div class="conf-entry">
+                        <div class="conf-year">2025</div>
+                        <div>
+                            <div class="conf-title">
+                                Engineering new-to-nature immune sensors for
+                                novel recognition of effectors in plant
+                                pathosystems
+                            </div>
+                            <div class="conf-event">20th IS- MPMI Congress</div>
+                            <div class="conf-location">Cologne, DE</div>
+                        </div>
+                        <span class="conf-type type-talk">Talk</span>
+                    </div>
+
+                    <div class="conf-entry">
+                        <div class="conf-year">2025</div>
+                        <div>
+                            <div class="conf-title">
+                                Engineering new-to-nature immune sensors for
+                                novel recognition of <em>Magnaporthe oryzae</em>
+                            </div>
+                            <div class="conf-event">20th IS-MPMI Congress</div>
+                            <div class="conf-location">Cologne, DE</div>
+                            <a
+                                href="www.doi.org/10.5281/zenodo.15880523"
+                                class="conf-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <svg
+                                    width="12"
+                                    height="12"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path
+                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                    />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                View on Zenodo
+                            </a>
+                        </div>
+                        <span class="conf-type type-poster">Poster</span>
+                    </div>
+
+                    <div class="conf-entry">
+                        <div class="conf-year">2024</div>
+                        <div>
+                            <div class="conf-title">
+                                Developing new-to-nature protein binders for the
+                                <em>Magnaporthe oryzae</em> pathosystem
+                            </div>
+                            <div class="conf-event">
+                                Advancing Plant Health Forum
+                            </div>
+                            <div class="conf-location">Norwich, UK</div>
+                        </div>
+                        <span class="conf-type type-talk">Talk</span>
+                    </div>
+
+                    <div class="conf-entry">
+                        <div class="conf-year">2024</div>
+                        <div>
+                            <div class="conf-title">
+                                Using structural homology predictions to infer
+                                biological function of effector proteins during
+                                plant infections
+                            </div>
+                            <div class="conf-event">
+                                NRPDTP Summer Conference
+                            </div>
+                            <div class="conf-location">Norwich, UK</div>
+                        </div>
+                        <span class="conf-type type-talk">Talk</span>
+                    </div>
+
+                    <div class="conf-entry">
+                        <div class="conf-year">2024</div>
+                        <div>
+                            <div class="conf-title">
+                                In-silico characterisation of
+                                <em>Magnaporthe</em>
+                                effector proteins
+                            </div>
+                            <div class="conf-event">Magnafest</div>
+                            <div class="conf-location">Pacific Grove, US</div>
+                        </div>
+                        <span class="conf-type type-talk">Talk</span>
+                    </div>
+
+                    <div class="conf-entry">
+                        <div class="conf-year">2024</div>
+                        <div>
+                            <div class="conf-title">
+                                Finding function through form: predicting
+                                effector function in the blast fungus through
+                                structural biology
+                            </div>
+                            <div class="conf-event">
+                                32nd Fungal Genetics Conference
+                            </div>
+                            <div class="conf-location">Pacific Grove, US</div>
+                            <a
+                                href="www.doi.org/10.5281/zenodo.10793245"
+                                class="conf-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <svg
+                                    width="12"
+                                    height="12"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path
+                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                    />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                View on Zenodo
+                            </a>
+                        </div>
+                        <span class="conf-type type-poster">Poster</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="pub-entry">
-        <div class="pub-year">2024</div>
-        <div class="pub-body">
-          <div class="pub-title">Complexity of the lichen symbiosis revealed by metagenome and transcriptome analysis of Xanthoria parietina</div>
-          <div class="pub-authors">Tagirdzhanova G., Scharnagl K., Sahu N., Yan X., <strong>Bucknell A. H.</strong>, Bentham A. R., Jégousse C., Ament-Velàsquez S. L., Brännström I. O., Johannesson H., MacLean D. &amp; Talbot N. J.</div>
-          <div class="pub-abstract" id="abs-3">
-            Placeholder abstract — paste your real abstract here.
-          </div>
-          <div class="pub-actions">
-            <button class="abstract-toggle" onclick="toggleAbstract('abs-3', this)">Abstract <span class="toggle-arrow">↓</span></button>
-            <a href="https://doi.org/10.1016/j.cub.2024.12.041" target="_blank" rel="noopener noreferrer" class="pub-link">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              DOI
-            </a>
-            <span class="pub-badge badge-journal">Curr. Biol.</span>
-          </div>
-        </div>
-      </div>
+        <!-- FOOTER -->
+        <footer>
+            <span class="footer-name">Angus Bucknell</span>
+            <span class="footer-copy"
+                >PhD Candidate · The Sainsbury Laboratory · Norwich, UK</span
+            >
+        </footer>
 
-      <div class="pub-entry">
-        <div class="pub-year">2023</div>
-        <div class="pub-body">
-          <div class="pub-title">That's no moon, it's a Starship: Giant transposons driving fungal horizontal gene transfer</div>
-          <div class="pub-authors"><strong>Bucknell A. H.</strong> &amp; McDonald M. C.</div>
-          <div class="pub-abstract" id="abs-4">
-            Placeholder abstract — paste your real abstract here.
-          </div>
-          <div class="pub-actions">
-            <button class="abstract-toggle" onclick="toggleAbstract('abs-4', this)">Abstract <span class="toggle-arrow">↓</span></button>
-            <a href="https://doi.org/10.1111/mmi.15118" target="_blank" rel="noopener noreferrer" class="pub-link">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              DOI
-            </a>
-            <span class="pub-badge badge-journal">Mol. Microbiol.</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <p style="font-size: 0.78rem; color: var(--ink-muted); margin-top: 24px;">* indicates co-first authorship</p>
-  </div>
-</div>
-
-<!-- CONFERENCES -->
-<div class="pub-section" id="conferences">
-  <div class="pub-section-inner">
-    <div class="section-label">Conferences</div>
-    <h2 class="section-title">Posters &amp; talks</h2>
-    <div class="conf-list">
-
-      <div class="conf-entry">
-        <div class="conf-year">2025</div>
-        <div>
-          <div class="conf-title">[Placeholder: talk or poster title]</div>
-          <div class="conf-event">[Conference name]</div>
-          <div class="conf-location">[City, Country]</div>
-        </div>
-        <span class="conf-type type-talk">Talk</span>
-      </div>
-
-      <div class="conf-entry">
-        <div class="conf-year">2025</div>
-        <div>
-          <div class="conf-title">[Placeholder: poster title]</div>
-          <div class="conf-event">[Conference name]</div>
-          <div class="conf-location">[City, Country]</div>
-          <a href="#" class="conf-link" target="_blank" rel="noopener noreferrer">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            View on Zenodo
-          </a>
-        </div>
-        <span class="conf-type type-poster">Poster</span>
-      </div>
-
-      <div class="conf-entry">
-        <div class="conf-year">2024</div>
-        <div>
-          <div class="conf-title">[Placeholder: talk or poster title]</div>
-          <div class="conf-event">[Conference name]</div>
-          <div class="conf-location">[City, Country]</div>
-        </div>
-        <span class="conf-type type-talk">Talk</span>
-      </div>
-
-      <div class="conf-entry">
-        <div class="conf-year">2024</div>
-        <div>
-          <div class="conf-title">[Placeholder: poster title]</div>
-          <div class="conf-event">[Conference name]</div>
-          <div class="conf-location">[City, Country]</div>
-          <a href="#" class="conf-link" target="_blank" rel="noopener noreferrer">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            View on Zenodo
-          </a>
-        </div>
-        <span class="conf-type type-poster">Poster</span>
-      </div>
-
-      <div class="conf-entry">
-        <div class="conf-year">2024</div>
-        <div>
-          <div class="conf-title">[Placeholder: poster title]</div>
-          <div class="conf-event">[Conference name]</div>
-          <div class="conf-location">[City, Country]</div>
-          <a href="#" class="conf-link" target="_blank" rel="noopener noreferrer">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            View on Zenodo
-          </a>
-        </div>
-        <span class="conf-type type-poster">Poster</span>
-      </div>
-
-      <div class="conf-entry">
-        <div class="conf-year">2023</div>
-        <div>
-          <div class="conf-title">[Placeholder: talk or poster title]</div>
-          <div class="conf-event">[Conference name]</div>
-          <div class="conf-location">[City, Country]</div>
-        </div>
-        <span class="conf-type type-talk">Talk</span>
-      </div>
-
-      <div class="conf-entry">
-        <div class="conf-year">2023</div>
-        <div>
-          <div class="conf-title">[Placeholder: poster title]</div>
-          <div class="conf-event">[Conference name]</div>
-          <div class="conf-location">[City, Country]</div>
-          <a href="#" class="conf-link" target="_blank" rel="noopener noreferrer">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            View on Zenodo
-          </a>
-        </div>
-        <span class="conf-type type-poster">Poster</span>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- FOOTER -->
-<footer>
-  <span class="footer-name">Angus Bucknell</span>
-  <span class="footer-copy">PhD Candidate · The Sainsbury Laboratory · Norwich, UK</span>
-</footer>
-
-<script src="assets/js/nav.js"></script>
-<script src="assets/js/publications.js"></script>
-</body>
+        <script src="assets/js/nav.js"></script>
+        <script src="assets/js/publications.js"></script>
+    </body>
 </html>
