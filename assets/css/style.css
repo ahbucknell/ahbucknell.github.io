@@ -616,7 +616,7 @@ footer {
 }
 @media (max-width: 860px) {
   section { min-height: auto; justify-content: flex-start; }
-  nav { padding: 0 24px; background: var(--bg); }
+  nav { padding: env(safe-area-inset-top) 24px 0; height: calc(60px + env(safe-area-inset-top)); background: var(--bg); }
   .nav-toggle { display: flex; }
   .nav-links {
     display: none;
