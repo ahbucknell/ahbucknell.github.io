@@ -9,6 +9,11 @@
     window.addEventListener('scroll', updateTheme, { passive: true });
   }
 
+  // Set hero height to actual viewport height (reliable on iOS)
+  if (hero && window.innerWidth <= 860) {
+    hero.style.minHeight = window.innerHeight + 'px';
+  }
+
   const toggle = document.querySelector('.nav-toggle');
   const links  = document.querySelector('.nav-links');
   if (!toggle || !links) return;
