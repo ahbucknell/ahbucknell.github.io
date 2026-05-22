@@ -12,7 +12,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 /* ─── Hero: protein interaction network canvas ────────────── */
 const canvas = document.getElementById('network-canvas');
 const ctx    = canvas.getContext('2d');
-let W, H, nodes, animId;
+let W, H, nodes;
 
 function resize() {
   W = canvas.width  = canvas.offsetWidth;
