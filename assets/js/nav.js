@@ -3,9 +3,11 @@
   const themeMeta = document.querySelector('meta[name="theme-color"]');
   const hero = document.getElementById('hero');
   if (themeMeta && hero) {
-    new IntersectionObserver(([entry]) => {
-      themeMeta.content = entry.isIntersecting ? '#1e3028' : '#f8f7f4';
-    }, { threshold: 0 }).observe(hero);
+    const updateTheme = () => {
+      themeMeta.content = hero.getBoundingClientRect().bottom > 0 ? '#1e3028' : '#f8f7f4';
+    };
+    updateTheme();
+    window.addEventListener('scroll', updateTheme, { passive: true });
   }
 
   const toggle = document.querySelector('.nav-toggle');
