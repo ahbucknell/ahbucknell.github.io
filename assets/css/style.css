@@ -18,7 +18,7 @@
 html { scroll-behavior: smooth; background: var(--bg-dark); }
 body {
   font-family: var(--sans);
-  background: var(--bg-dark);
+  background: var(--bg);
   color: var(--ink);
   font-size: 16px;
   line-height: 1.7;
@@ -615,13 +615,14 @@ footer {
   section { padding: 80px 48px; }
 }
 @media (max-width: 860px) {
+  html { scroll-padding-top: calc(60px + env(safe-area-inset-top)); }
   section { min-height: auto; justify-content: flex-start; }
-  nav { padding: env(safe-area-inset-top) 24px 0; height: calc(60px + env(safe-area-inset-top)); background: var(--bg); }
+  nav { position: fixed; width: 100%; padding: env(safe-area-inset-top) 24px 0; height: calc(60px + env(safe-area-inset-top)); background: var(--bg); }
   .nav-toggle { display: flex; }
   .nav-links {
     display: none;
-    position: absolute;
-    top: 60px;
+    position: fixed;
+    top: calc(60px + env(safe-area-inset-top));
     left: 0;
     right: 0;
     flex-direction: column;
@@ -637,7 +638,7 @@ footer {
   .nav-links a { display: block; padding: 14px 0; font-size: 0.85rem; }
   section { padding: 60px 24px 40px; }
   #hero { min-height: 100svh; }
-  .hero-content { padding: 100px 24px 60px; }
+  .hero-content { padding: calc(80px + env(safe-area-inset-top)) 24px 60px; }
   .hero-scroll-hint { left: 24px; }
   .about-grid, .cv-inner, .edu-grid { grid-template-columns: 1fr; gap: 40px; }
   .about-photo-wrap { max-width: 260px; }
