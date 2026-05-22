@@ -6,7 +6,6 @@
     const updateTheme = () => {
       themeMeta.content = hero.getBoundingClientRect().bottom > 0 ? '#1e3028' : '#f8f7f4';
     };
-    updateTheme();
     window.addEventListener('scroll', updateTheme, { passive: true });
   }
 
