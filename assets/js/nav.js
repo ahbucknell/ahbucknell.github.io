@@ -9,9 +9,9 @@
     window.addEventListener('scroll', updateTheme, { passive: true });
   }
 
-  // Set hero height to actual viewport height + buffer to push about section below Safari URL bar
+  // Use screen.height (physical screen, ignores browser chrome) to fill viewport on mobile
   if (hero && window.innerWidth <= 860) {
-    hero.style.minHeight = (window.innerHeight + 100) + 'px';
+    hero.style.minHeight = screen.height + 'px';
   }
 
   const toggle = document.querySelector('.nav-toggle');
