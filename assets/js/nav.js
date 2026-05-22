@@ -9,9 +9,11 @@
     window.addEventListener('scroll', updateTheme, { passive: true });
   }
 
-  // Set hero height to actual viewport height (reliable on iOS)
+  // Set hero height to actual viewport height + nav height buffer (pushes about section below Safari URL bar)
+  const nav = document.querySelector('nav');
   if (hero && window.innerWidth <= 860) {
-    hero.style.minHeight = window.innerHeight + 'px';
+    const extra = nav ? nav.offsetHeight : 80;
+    hero.style.minHeight = (window.innerHeight + extra) + 'px';
   }
 
   const toggle = document.querySelector('.nav-toggle');
