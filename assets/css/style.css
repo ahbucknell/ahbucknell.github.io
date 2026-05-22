@@ -637,8 +637,7 @@ footer {
   .nav-links li:last-child { border-bottom: none; }
   .nav-links a { display: block; padding: 14px 0; font-size: 0.85rem; }
   section { padding: 60px 24px 40px; }
-  #hero { min-height: 100svh; padding-bottom: 60px; }
-  footer { padding-bottom: calc(32px + env(safe-area-inset-bottom)); }
+  #hero { min-height: 100dvh; }
   .hero-content { padding: calc(80px + env(safe-area-inset-top)) 24px 60px; }
   .hero-scroll-hint { left: 24px; }
   .about-grid, .cv-inner, .edu-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -649,7 +648,7 @@ footer {
   .tl-spine { display: none; }
   .pub-item { grid-template-columns: 1fr; gap: 12px; }
   .pub-idx { display: none; }
-  footer { flex-direction: column; gap: 12px; padding: 32px 24px; text-align: center; }
+  footer { flex-direction: column; gap: 12px; padding: 32px 24px calc(32px + env(safe-area-inset-bottom)); text-align: center; }
   .pub-section { padding: 64px 24px; }
   .pub-entry { grid-template-columns: 44px 1fr; gap: 16px; }
   .conf-entry { grid-template-columns: 44px 1fr; gap: 8px 16px; }
