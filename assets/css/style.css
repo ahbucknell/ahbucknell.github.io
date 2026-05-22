@@ -616,7 +616,7 @@ footer {
 }
 @media (max-width: 860px) {
   html { scroll-padding-top: calc(60px + env(safe-area-inset-top)); }
-  body { background: var(--bg-dark); }
+  body::after { content: ''; display: block; position: fixed; bottom: 0; left: 0; right: 0; height: env(safe-area-inset-bottom); background: var(--bg-dark); z-index: 0; }
   section { min-height: auto; justify-content: flex-start; }
   nav { position: fixed; width: 100%; padding: env(safe-area-inset-top) 24px 0; height: calc(60px + env(safe-area-inset-top)); background: var(--bg); }
   .nav-toggle { display: flex; }

@@ -9,11 +9,9 @@
     window.addEventListener('scroll', updateTheme, { passive: true });
   }
 
-  // Set hero height to actual viewport height + nav height buffer (pushes about section below Safari URL bar)
-  const nav = document.querySelector('nav');
+  // Set hero height to actual viewport height + buffer to push about section below Safari URL bar
   if (hero && window.innerWidth <= 860) {
-    const extra = nav ? nav.offsetHeight : 80;
-    hero.style.minHeight = (window.innerHeight + extra) + 'px';
+    hero.style.minHeight = (window.innerHeight + 100) + 'px';
   }
 
   const toggle = document.querySelector('.nav-toggle');
