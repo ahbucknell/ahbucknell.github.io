@@ -637,7 +637,8 @@ footer {
   .nav-links li:last-child { border-bottom: none; }
   .nav-links a { display: block; padding: 14px 0; font-size: 0.85rem; }
   section { padding: 60px 24px 40px; }
-  #hero { min-height: 100svh; }
+  #hero { min-height: 100svh; padding-bottom: 60px; }
+  footer { padding-bottom: calc(32px + env(safe-area-inset-bottom)); }
   .hero-content { padding: calc(80px + env(safe-area-inset-top)) 24px 60px; }
   .hero-scroll-hint { left: 24px; }
   .about-grid, .cv-inner, .edu-grid { grid-template-columns: 1fr; gap: 40px; }
