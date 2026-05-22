@@ -1,4 +1,13 @@
 (function () {
+  // Switch theme-color between dark (hero) and light (rest of page)
+  const themeMeta = document.querySelector('meta[name="theme-color"]');
+  const hero = document.getElementById('hero');
+  if (themeMeta && hero) {
+    new IntersectionObserver(([entry]) => {
+      themeMeta.content = entry.isIntersecting ? '#1e3028' : '#f8f7f4';
+    }, { threshold: 0 }).observe(hero);
+  }
+
   const toggle = document.querySelector('.nav-toggle');
   const links  = document.querySelector('.nav-links');
   if (!toggle || !links) return;
