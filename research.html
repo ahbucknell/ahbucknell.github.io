@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+        <meta name="theme-color" content="#f6f3ee" />
+        <title>Research — Angus Bucknell</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Archivo:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <!-- NAV -->
+        <nav>
+            <a href="index.html" class="nav-name">Angus Bucknell</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="publications.html">Output</a></li>
+                <li><a href="index.html#cv">Contact</a></li>
+            </ul>
+            <button
+                class="nav-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <!-- PROTEIN DESIGN -->
+        <div class="pub-section" id="protein-design">
+            <div class="pub-section-inner">
+                <div class="section-label">Protein design</div>
+                <h2 class="section-title">
+                    Designing binders to probe effector function
+                </h2>
+                <div class="research-grid-layout">
+                <div class="research-figure research-figure--portrait">
+                    Figure placeholder
+                    <span class="figure-caption"
+                        ><span class="figure-caption-text"
+                            >Predicted structure of a designed binder (rust)
+                            docked against an <em>M. oryzae</em> effector
+                            target.</span
+                        ></span
+                    >
+                </div>
+                <div class="research-detail">
+                    <p>
+                        <em>Magnaporthe oryzae</em> secretes a large repertoire
+                        of effector proteins during infection, many of which
+                        share little to no sequence similarity with anything
+                        of known function. Traditional reagents — antibodies,
+                        affinity tags, knockout lines — are slow to generate
+                        and often tell you very little about what an effector
+                        is actually doing inside the host cell.
+                    </p>
+                    <p>
+                        I'm using <strong>novel, deep learning-based protein
+                        design</strong> to generate bespoke binding proteins
+                        against individual effector targets. Rather than
+                        screening existing libraries, these binders are
+                        designed directly against a target's predicted
+                        structure, which makes it possible to go after
+                        effectors that have no natural binding partner to
+                        start from.
+                    </p>
+                    <p>
+                        The goal isn't just a better reagent. A binder that
+                        works tells you something about the surface it binds,
+                        and a designed binder that blocks a specific interface
+                        can be used to test whether that interface matters for
+                        virulence — turning a structural prediction into a
+                        testable hypothesis about mechanism.
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STRUCTURAL BIOINFORMATICS -->
+        <div class="pub-section" id="structural-bioinformatics">
+            <div class="pub-section-inner">
+                <div class="section-label">Structural bioinformatics</div>
+                <h2 class="section-title">
+                    Mapping the effector repertoire through structure
+                </h2>
+                <div class="research-grid-layout reverse">
+                <div class="research-figure research-figure--square">
+                    Figure placeholder
+                    <span class="figure-caption"
+                        ><span class="figure-caption-text"
+                            >Clustering of predicted effector structures by
+                            fold similarity across the <em>M. oryzae</em>
+                            secretome.</span
+                        ></span
+                    >
+                </div>
+                <div class="research-detail">
+                    <p>
+                        Effectors evolve fast. Sequence homology, the usual
+                        first tool for inferring function, mostly fails once
+                        you're comparing effectors across species or even
+                        within the same pathogen's expanded gene families.
+                        Structure is far more conserved than sequence, which
+                        makes it a better starting point for function
+                        prediction at scale.
+                    </p>
+                    <p>
+                        Using <strong>high-throughput structural
+                        modelling</strong>, I generate predicted structures
+                        across the <em>M. oryzae</em> secretome and compare
+                        them against known folds and against each other. This
+                        doesn't give a definitive answer for any single
+                        effector, but it lets me group effectors into putative
+                        structural families, flag candidates that resemble
+                        known immune-evasion or enzymatic folds, and
+                        prioritise which targets are worth taking into the lab.
+                    </p>
+                    <p>
+                        It's a triage step as much as a discovery one — a way
+                        of turning a list of hundreds of largely unannotated
+                        genes into a shorter list of testable hypotheses.
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TRANSPOSON BIOLOGY -->
+        <div class="pub-section" id="transposon-biology">
+            <div class="pub-section-inner">
+                <div class="section-label">Transposon biology</div>
+                <h2 class="section-title">
+                    Starships and the spread of virulence
+                </h2>
+                <div class="research-grid-layout">
+                <div class="research-figure research-figure--landscape">
+                    Figure placeholder
+                    <span class="figure-caption"
+                        ><span class="figure-caption-text"
+                            >Schematic of Starship-mediated horizontal
+                            transfer of <strong>ToxA</strong>/<strong
+                                >ToxTA</strong
+                            >
+                            between fungal wheat pathogens.</span
+                        ></span
+                    >
+                </div>
+                <div class="research-detail">
+                    <p>
+                        Before moving into effector biology, my Master's
+                        research with Dr. Megan McDonald focused on
+                        <em>Starships</em> — giant transposons, found across
+                        Pezizomycotina fungi, that are capable of mobilising
+                        entire blocks of host genes between
+                        genomes<a href="#ref-3" class="cite">3</a>. We
+                        described <em>Sanctuary</em>, a Starship carrying the
+                        virulence factor <strong>ToxA</strong>, and showed it
+                        sits alongside an independently acquired copy of the
+                        related toxin <strong>ToxTA</strong> in fungal wheat
+                        pathogens<a href="#ref-1" class="cite">1</a> — evidence
+                        that horizontal transfer of these elements is an
+                        active driver of virulence evolution, not just a
+                        historical curiosity.
+                    </p>
+                    <p>
+                        That work has continued since: <em>Tangerine</em>, a
+                        Starship family identified in the lichen-forming
+                        fungus <em>Xanthoria parietina</em>, extended the
+                        known host range of these elements well beyond
+                        pathogenic fungi, into a symbiotic system with its own
+                        signatures of horizontal gene transfer between
+                        distantly related fungal partners<a href="#ref-2" class="cite">2</a>.
+                    </p>
+                    <p>
+                        I keep half an eye on this question alongside my PhD
+                        work, because the same basic problem — how a fungal
+                        genome acquires and spreads a new virulence-associated
+                        gene — sits underneath both the Starship work and the
+                        effector biology of <em>M. oryzae</em>.
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- REFERENCES -->
+        <div class="pub-section" id="references">
+            <div class="pub-section-inner">
+                <div class="section-label">Citations</div>
+                <h2 class="section-title">References</h2>
+                <div class="ref-list">
+                    <div class="ref-item" id="ref-1">
+                        <div class="ref-num">1.</div>
+                        <div>
+                            Bucknell A. H.*, Wilson H. M.*, Gonçalves do Santos
+                            K. C., Simpfendorfer S., Milgate A., Germain H.,
+                            Solomon P. S., Bentham A. R. &amp; McDonald M. C.
+                            Sanctuary: A Starship transposon facilitating the
+                            movement of the virulence factor ToxA in fungal
+                            wheat pathogens.
+                            <a
+                                href="https://doi.org/10.1128/mbio.01371-25"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >mBio, 2025</a
+                            >.
+                        </div>
+                    </div>
+                    <div class="ref-item" id="ref-2">
+                        <div class="ref-num">2.</div>
+                        <div>
+                            Tagirdzhanova G., Brown N. E., Bucknell A. H.,
+                            Cameron E. S., Finn R. D., Blaxter M., McDonald M.
+                            C., Gluck-Thaler E. &amp; Talbot N. J. Tangerine: a
+                            new family of Starships from lichen-forming fungi.
+                            <a
+                                href="https://doi.org/10.1101/2025.11.25.690456"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >bioRxiv, 2025</a
+                            >.
+                        </div>
+                    </div>
+                    <div class="ref-item" id="ref-3">
+                        <div class="ref-num">3.</div>
+                        <div>
+                            Bucknell A. H. &amp; McDonald M. C. That's no moon,
+                            it's a Starship: Giant transposons driving fungal
+                            horizontal gene transfer.
+                            <a
+                                href="https://doi.org/10.1111/mmi.15118"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Mol. Microbiol., 2023</a
+                            >.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <span class="footer-name">Angus Bucknell</span>
+            <span class="footer-copy"
+                >PhD Candidate · The Sainsbury Laboratory · Norwich, UK</span
+            >
+        </footer>
+
+        <script src="assets/js/nav.js"></script>
+    </body>
+</html>

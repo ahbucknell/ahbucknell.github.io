@@ -4,7 +4,7 @@
   const hero = document.getElementById('hero');
   if (themeMeta && hero) {
     const updateTheme = () => {
-      themeMeta.content = hero.getBoundingClientRect().bottom > 0 ? '#1e3028' : '#f8f7f4';
+      themeMeta.content = hero.getBoundingClientRect().bottom > 0 ? '#18171a' : '#f6f3ee';
     };
     window.addEventListener('scroll', updateTheme, { passive: true });
   }
