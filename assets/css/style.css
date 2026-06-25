@@ -472,6 +472,46 @@ footer {
 .ref-num { font-family: var(--mono); font-weight: 500; color: var(--accent); }
 .ref-item a { color: var(--accent); text-decoration: underline; text-decoration-color: rgba(194,120,15,0.4); }
 .ref-item a:hover { text-decoration-color: var(--accent); }
+.ref-item strong { color: var(--ink); font-weight: 600; }
+
+/* ─── CV page ─────────────────────────────────────────────── */
+.cv-page-header { text-align: center; max-width: 720px; }
+.cv-page-name { font-family: var(--sans); font-weight: 700; font-size: clamp(2rem, 4vw, 2.8rem); color: var(--ink); margin-bottom: 10px; letter-spacing: -0.01em; }
+.cv-page-tagline { font-family: var(--mono); font-size: 0.85rem; color: var(--accent); margin-bottom: 16px; }
+.cv-page-contact { font-family: var(--mono); font-size: 0.8rem; color: var(--ink-muted); margin-bottom: 28px; }
+.cv-page-contact a { color: var(--ink-muted); text-decoration: underline; text-decoration-color: var(--border); transition: color 0.15s; }
+.cv-page-contact a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+
+.cv-entry-list { display: flex; flex-direction: column; }
+.cv-entry { padding: 24px 0; border-top: 1px solid var(--border); }
+.cv-entry-list .cv-entry:last-child { border-bottom: 1px solid var(--border); }
+.cv-entry-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 4px; }
+.cv-entry-title { font-family: var(--sans); font-weight: 600; font-size: 1.05rem; color: var(--ink); }
+.cv-entry-date { font-family: var(--mono); font-size: 0.76rem; color: var(--accent); white-space: nowrap; }
+.cv-entry-sub { font-family: var(--mono); font-size: 0.78rem; color: var(--ink-muted); margin-bottom: 10px; }
+.cv-entry-body { font-size: 0.9rem; color: var(--ink-muted); }
+.cv-entry-body ul { list-style: none; }
+.cv-entry-body li { padding-left: 18px; position: relative; margin-bottom: 4px; }
+.cv-entry-body li::before { content: '—'; position: absolute; left: 0; color: var(--accent); }
+.cv-entry-body a { color: var(--accent); text-decoration: underline; text-decoration-color: rgba(194,120,15,0.4); }
+.cv-entry-body a:hover { text-decoration-color: var(--accent); }
+
+.cv-skill-row { margin-bottom: 16px; font-size: 0.92rem; color: var(--ink-muted); line-height: 1.7; }
+.cv-skill-row:last-child { margin-bottom: 0; }
+.cv-skill-row strong { font-family: var(--mono); font-weight: 600; color: var(--ink); display: block; margin-bottom: 4px; font-size: 0.78rem; letter-spacing: 0.02em; }
+.cv-header-inner { display: flex; justify-content: center; }
+.cv-subheading { font-family: var(--mono); font-size: 0.8rem; font-weight: 600; color: var(--accent); margin-bottom: 12px; }
+.cv-note { font-family: var(--mono); font-size: 0.78rem; color: var(--ink-muted); margin-top: -16px; margin-bottom: 24px; }
+.cv-ref-link { margin-top: 6px; font-family: var(--mono); font-size: 0.78rem; }
+
+/* Tighter section rhythm on the CV page specifically (publications.html keeps the roomier defaults) */
+.cv-page .pub-section { padding: 44px 80px; }
+.cv-page h2.section-title { margin-bottom: 24px; }
+.cv-page .cv-entry { padding: 16px 0; }
+.cv-page .ref-item { padding: 12px 0; }
+.cv-page .cv-subheading { margin-top: 20px; }
+.cv-page .cv-sublist { margin-bottom: 20px; }
+.cv-page .ref-list .ref-item:last-child { border-bottom: none; }
 
 /* ─── Output page ─────────────────────────────────────────── */
 .pub-section {

@@ -1,14 +1,5 @@
 # TODO
 
-## CV page
-- [ ] Add a CV page/section in the site's current style, with a download link.
-- [ ] Generate the downloadable CV as a PDF via Typst (`.typ` source committed
-      to the repo, compiled to PDF as the download artifact).
-- [ ] Theme the PDF lightly, not fully: carry over the ochre accent and the
-      Work Sans / IBM Plex Mono pairing, but keep a conventional academic CV
-      layout/density rather than importing the site's decorative elements
-      (bracket tags, hover states, etc.).
-
 ## research.html
 - [ ] Currently unlinked from nav (deliberately — content needs a rewrite
       pass).
