@@ -1,22 +1,23 @@
 # TODO
 
 ## CV page
-- [ ] Add a CV page/section in the editorial style, with a download link.
+- [ ] Add a CV page/section in the site's current style, with a download link.
 - [ ] Generate the downloadable CV as a PDF via Typst (`.typ` source committed
       to the repo, compiled to PDF as the download artifact).
-- [ ] Theme the PDF lightly, not fully: carry over the rust accent (headers,
-      rule lines) and the Source Serif 4 / Archivo pairing, but keep a
-      conventional academic CV layout/density rather than importing the
-      site's decorative elements (masthead rules, hover states, etc.).
+- [ ] Theme the PDF lightly, not fully: carry over the ochre accent and the
+      Work Sans / IBM Plex Mono pairing, but keep a conventional academic CV
+      layout/density rather than importing the site's decorative elements
+      (bracket tags, hover states, etc.).
 
 ## research.html
-- [ ] Currently unlinked from nav (deliberately, see commit
-      `e79ac01`/branch `editorial-redesign`) — content needs a rewrite pass.
+- [ ] Currently unlinked from nav (deliberately — content needs a rewrite
+      pass).
 - [ ] Replace the three figure placeholders (portrait, square, landscape)
       with real figures once available.
-- [ ] Re-link from nav (`index.html`, `publications.html`, `research.html`)
-      and un-hide the homepage "Explore my research in detail" CTA once the
-      page is ready.
+- [ ] Once ready: point the "Research" nav link (`index.html`,
+      `publications.html`, `research.html`) at `research.html` instead of
+      `index.html#research`, and un-hide the homepage "Explore my research
+      in detail" CTA.
 
 ## Possible new pages/sections (discussed, not committed to)
 - [ ] "News" / "Updates" — a small, low-maintenance strip (new preprint,

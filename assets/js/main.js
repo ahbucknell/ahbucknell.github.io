@@ -48,7 +48,7 @@ nodes = Array.from({ length: 80 }, (_, i) => ({
       const dy   = nodes[i].y - nodes[j].y;
       const dist = Math.sqrt(dx * dx + dy * dy);
       if (dist < MAX) {
-        ctx.strokeStyle = `rgba(210,117,74,${(1 - dist / MAX) * 0.35})`;
+        ctx.strokeStyle = `rgba(224,150,47,${(1 - dist / MAX) * 0.35})`;
         ctx.lineWidth   = 0.7;
         ctx.beginPath();
         ctx.moveTo(nodes[i].x, nodes[i].y);
@@ -61,7 +61,7 @@ nodes = Array.from({ length: 80 }, (_, i) => ({
   nodes.forEach(n => {
     ctx.beginPath();
     ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
-    ctx.fillStyle = n.hub ? 'rgba(210,117,74,0.9)' : 'rgba(241,236,226,0.55)';
+    ctx.fillStyle = n.hub ? 'rgba(224,150,47,0.9)' : 'rgba(236,236,223,0.55)';
     ctx.fill();
   });
 

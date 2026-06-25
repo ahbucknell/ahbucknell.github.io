@@ -1,10 +1,30 @@
-(function () {
+(async function () {
+  const navHost = document.querySelector('nav');
+  const footerHost = document.querySelector('footer');
+
+  await Promise.all([
+    navHost
+      ? fetch('assets/partials/nav.html').then(r => r.text()).then(html => { navHost.innerHTML = html; })
+      : Promise.resolve(),
+    footerHost
+      ? fetch('assets/partials/footer.html').then(r => r.text()).then(html => { footerHost.innerHTML = html; })
+      : Promise.resolve(),
+  ]);
+
+  // Highlight the nav link matching the current page (anchors on index.html are never "active")
+  if (navHost) {
+    const page = location.pathname.split('/').pop() || 'index.html';
+    navHost.querySelectorAll('.nav-links a').forEach(a => {
+      if (a.getAttribute('href') === page) a.classList.add('active');
+    });
+  }
+
   // Switch theme-color between dark (hero) and light (rest of page)
   const themeMeta = document.querySelector('meta[name="theme-color"]');
   const hero = document.getElementById('hero');
   if (themeMeta && hero) {
     const updateTheme = () => {
-      themeMeta.content = hero.getBoundingClientRect().bottom > 0 ? '#18171a' : '#f6f3ee';
+      themeMeta.content = hero.getBoundingClientRect().bottom > 0 ? '#14161a' : '#eef0ec';
     };
     window.addEventListener('scroll', updateTheme, { passive: true });
   }

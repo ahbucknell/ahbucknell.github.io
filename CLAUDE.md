@@ -16,15 +16,19 @@ python3 -m http.server 8000
 
 ## Design
 
-- **Palette**: forest green (`--green: #2d4a3e`), sage (`--sage: #5a8a72`), mint (`--mint: #c8ddd4`), off-white bg (`--bg: #f8f7f4`), dark green bg (`--bg-dark: #1e3028`)
-- **Typography**: DM Serif Display (headings) + DM Sans (body), loaded from Google Fonts
+- **Direction**: Technical / Specimen-label — grid-paper-toned light backgrounds, near-black ink, ochre accent, bracket `[tag]` labels, monospace metadata
+- **Palette**: ochre accent (`--accent: #c2780f`), bright ochre (`--accent-bright: #e0962f`), ink (`--ink: #16181a`), light bg (`--bg: #eef0ec`), near-black dark bg (`--bg-dark: #14161a`)
+- **Typography**: Work Sans (`--sans`, headings + body) + IBM Plex Mono (`--mono`, labels/metadata/buttons), loaded from Google Fonts
 - CSS variables are defined in `assets/css/style.css` under `:root`
 
 ## File structure
 
-- **`index.html`** — HTML content only (~288 lines)
+- **`index.html`** — homepage (hero, about, research, experience, publications preview, contact)
+- **`research.html`** — expanded research detail page with figures/citations; currently **unlinked from nav on purpose** (content needs a rewrite pass — see `TODO.md`)
+- **`publications.html`** — full publications & conference output page
 - **`assets/css/style.css`** — all styles
 - **`assets/js/main.js`** — scroll-reveal observer + hero canvas animation
+- **`assets/js/nav.js`** — mobile nav toggle + theme-color meta swap on scroll
 - **`images/headshot.jpeg`** — portrait photo used in the About section
 - **`images/`** — institution logos and research figures (not currently referenced by the site, kept for future use)
 
@@ -35,14 +39,13 @@ Sections in DOM order (anchor nav is sticky, inserted between Hero and About):
 | Anchor | Background | Content |
 |--------|-----------|---------|
 | `#hero` | dark | Full-viewport hero with animated canvas + name/title/CTAs |
-| `<nav>` | off-white | Sticky nav (sticks once hero scrolls off) |
-| `#about` | off-white | Two-column: headshot + bio text with keyword tags |
-| `#research` | dark | Three research cards (01–03) |
-| `#experience` | paper | Timeline of research positions |
-| `#education` | off-white | Two education cards |
-| `#publications` | dark | Numbered list of publications and pre-prints |
-| `#cv` | off-white | Two-column: intro text + contact links (email, GitHub, ORCID, Bluesky) |
-| `<footer>` | dark | Name + affiliation |
+| `<nav>` | light | Sticky nav (sticks once hero scrolls off) |
+| `#about` | light | Two-column: headshot + bio text with keyword tags |
+| `#research` | dark | Research list (no numbering) |
+| `#experience` | paper | Timeline of research positions (degree info folded into matching entries, no separate Education section) |
+| `#publications` | dark | List of publications and pre-prints |
+| `#cv` | light | Two-column: intro text + contact links (email, GitHub, ORCID, Bluesky) |
+| `<footer>` | dark | Name + affiliation + funding statement (linked to UKRI grant page) |
 
 ## Hero animation
 
